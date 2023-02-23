@@ -1,0 +1,643 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*body{
+   /* background: rgba(64, 64, 216, 0.809);
+    background-image: url("../public/images/imgFond.jpg");
+    height: 100vh;
+    width: 100%;*/
+    /*background-repeat:unset;s
+    background-repeat:no-repeat;
+   
+
+   /* background: linear-gradient(80deg, #33339b, #4e8cd4);*/
+   /*background-color: rgba(3, 4, 53, 0.787);*/
+   /*background-image: radial-gradient(circle at 45.97% 55.76%, #020252 0, 
+   #080d6f 25%, #0f0044 50%, #000033 75%, #000027 100%);*/
+
+  /** background-repeat:no-repeat; 
+   height: 100vh;
+}*/
+
+.containerLogin{
+    /*background-color: rgb(0, 0, 0, .8);*/
+    /*background-color: #f1edf5;*/
+    background-color: rgba(0, 0, 0, .9);
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    align-items: center;
+    border-radius:5%;
+
+    width: 98%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+
+.formLogin{
+    padding: 10px;
+    margin-top: 110px;
+
+}
+
+.contImgLogin{
+    /*background: rgba(0, 0, 0, 0.80);*/
+    width: 38%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+    display: flex;
+    align-content: center;
+    padding-left: 5px;
+}
+.imgLogin{
+    width: 90%;
+    height: 120px;
+}
+.lblNameE{
+    color: #fffbfb;
+    text-align: center;
+    width: 100%;
+    font-size: 15px;
+    margin-top: -10px;
+    margin-bottom: 0px;
+}
+.lblSlogan{
+    color: #fffefe;
+    font-size: 8px;
+    text-align: center;
+    width: 100%;
+}
+
+
+
+.contDataLogin{
+    background-color: none;
+    display: flex;
+    width: 60%;
+    height: 100%;
+    flex-direction: column;
+    padding: 5px;
+    border-bottom-right-radius: 5%;
+    border-top-right-radius: 5%;
+    
+}
+.contGreeting{
+    margin-bottom: 0px;
+    margin-top: 10px;
+    height: 30px;
+
+    display: flex;
+    flex-direction: column;
+   
+}
+.lblM{
+    font-weight: bold;
+
+}
+.conTxtLogo{
+    background-color: none;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.lblLog{
+    color:hsl(0, 22%, 96%);
+    background-color: none; 
+}
+
+.txtLogin{
+    border: 0px solid  #f1edf5;
+    background: none;
+    border-bottom:2px solid hsla(204, 71%, 43%, 0.809);
+    margin-bottom: 8px;
+    color: #ebe8e8;
+    height: 30px;
+    padding-left: 10px;
+    outline: 0px;
+
+}
+
+.contLoYorAcount{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+.contForgotPass{
+    margin-left: 60px;
+    font-size: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.contBtnLogin{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    
+}
+
+
+
+
+
+.btnLogIn{
+    background: hsla(264, 11%, 91%, 0.809);
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    margin-left: 60px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.btnLogIn:hover{
+    background-color: #383636;
+    color: #0c0c0c;
+}
+
+.btblog{
+    background-color: red;
+}
+
+
+
+.txtUserLog{
+    margin-bottom: 20px;
+}
+
+.lblCaccount{
+    margin-top: 5px;
+    margin-left: 60px;
+    font-size: 18px;
+}
+
+.lblCaccount:hover{
+    font-size: 19px;
+}
+
+.lblL{
+    font-weight: initial;
+    margin-bottom: 0px;
+}
+
+.lblT{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+
+
+
+/*class fro te footer*//*class fro te footer*/
+/*class fro te footer*//*class fro te footer*/
+.footer{
+    background: rgb(16, 16, 19);
+    display: flex;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    margin: auto;
+    margin-top: 0px;
+    justify-content: space-between;
+}
+/*class for container image red social*/
+.contImgRedSocial{
+    height: 100px;  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 15%  ;
+}
+
+.imgFooter{
+    width: 60px;
+    height:60px;
+}
+
+.imgFacebook{
+    height: 300px;
+    width: 200px;
+}
+.lblFooter{
+    margin-right: 10px;
+    color: white;
+    font-size: 15px;
+}
+
+
+
+ /* Tooltip container */
+ .tooltip{
+    position: relative;
+    display: flex;
+    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+  }
+  
+  /* Tooltip text */
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+  
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+  
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  /* Tooltip arrow */
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  } 
+
+
+  /*! code login*/
+  /*new code for modallogin*//*new code for modallogin*//*new code for modallogin*/
+  /*new code for modallogin*//*new code for modallogin*/
+
+  
+
+  .modLog{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+
+  /*class for icon for backk*/
+  .iconBack{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    font-size: 30px;
+    color: #15065c;
+    padding-left: 5px;
+    margin-bottom: 30px;
+ }
+
+  .iconBack:hover{
+    font-size: 21px;
+    cursor:cell;
+  }
+
+  .formLogin{
+    margin-top: -0px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    margin: 0 auto;
+    
+  }
+
+  /*class for element in login cntainer ing le  ft*/
+  .contImgLoginH{
+    
+    background-image: url("../public/images/circuito3.png");
+    /*background-position: center left right top;*/
+    background-position: 20% 40%;
+    background-size: 100% 100%;
+    /*-webkit-transform: rotate(30deg); -moz-transform: rotate(30deg);
+     -ms-transform: rotate(30deg); -o-transform: rotate(30deg);
+      transform: rotate(30deg);*/
+    /*background-size: cover;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 60%;
+    height: 415px;
+  }
+
+
+  .fontImgLogin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, .7);
+
+  }
+
+
+
+
+
+
+
+  /*class for text login*/
+  .lblLoginT{
+    color: white;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  /*class for text name company*/
+  .lblNameCompany{
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  .textLog{
+    margin-top: 15px;
+    margin-bottom: 30px;
+  }
+
+  .contDataForm1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 95%;
+    height: 415px;
+    background-color: white;
+    
+    box-shadow: 7px 7px 15px #6b6968; 
+  }
+
+  /*class for container element of logo and input*/
+  .contFormL{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .imgLoginUs{
+    width: 100px;
+    height: 100px;
+    margin-bottom:30px;
+  }
+
+  /*class for title login*/
+  .lblLoginTitle{
+    font-size: 20px;
+
+    border-left: 6px solid rgb(17, 4, 59);
+    padding-left: 20px;
+    width: 70%;
+    margin-bottom: 10px;
+
+  }
+
+  /*container login input login*/
+  .cInpLog{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 80px;
+    margin-bottom: 10px;
+
+  }
+
+  .inpLogin{
+    background-color: none;
+    height: 40px;
+    width: 80%;
+    border: none;
+    outline: 0px;
+    /*border-bottom: 2px solid rgb(16, 16, 19);*/
+    box-shadow: 7px 0px 10px #6b6968; 
+  }
+
+  .inpLogin:active{
+    border-left: 6px solid rgb(17, 4, 59);
+  }
+
+  .cBntmodalLogin{
+    justify-content: flex-end;
+  }
+
+  .contBtnLogin{
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+
+  /* ! class for buttonlogin */
+  .btnLoginEnter{
+    background-color: none;
+    width: 100px;
+    height: 35px;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+  }
+
+
+  /*! class container element for register*/
+  .contFormRegister{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(48, 48, 141);
+    padding-top: 80px;
+  }
+
+  .formRegister{
+    flex-direction: column;
+    border-radius: 10px;
+  }
+
+  .conDataF{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+  }
+
+  .contDataFormRegister{
+    background-color: white;
+    box-shadow: none;
+  }
+
+  .iconClose{
+    
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    height: 40px;
+  }
+
+  /*Class for buton for close view register user*/
+  .iconClose p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 100%;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(0, 0, 0, .1);
+    text-align: center;
+  }
+
+  .iconClose p:hover{
+    background-color: rgba(0, 0, 0, .3);
+    cursor:ew-resize;
+  }
+
+  /*class for element of form register title*/
+  .lblTitleRegister{
+    font-size: 18px;
+    font-weight: bold;  
+    margin-top: -30px;
+  }
+
+  .lblRegister{
+    font-weight: bold;  
+
+  }
+
+  /*! class for input register user*/
+
+  .contInpRegister{
+    width: 90%;
+    margin-top: 30px;
+  }
+  .c2btnRegister{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .inpRegister{
+    background-color: rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    border: none;
+    height: 32px;
+    padding-left: 10px;
+    
+
+  }
+
+  /*class congainer butto register user*/
+
+  .btnRegisterEnter{
+    background-color: rgb(48, 48, 141);
+    width: 100%;
+    height: 40px;
+    border-radius: 15px;
+    border: 0px;
+    color: #f1edf5;
+    margin-bottom: 10px;
+  }
+
+  .lnRegister{
+    background-color: #0c0c0c;
+    width: 100px;
+    height: 1px;
+  }
+
+  .contLineOption{
+    margin-bottom: 30px;
+  }
+
+
+  /*class for image of the view register*/
+  .imgRegister{
+    display: none;
+  }
+
+
+
+ 
+
+
+
+@media screen and (min-width: 769px){
+
+    .formLogin{
+      
+        width: 50%;
+        
+      }
+
+    /*class for form register*/
+    .formRegister{
+        flex-direction: column;
+        border-radius: 10px;
+      }
+
+      .conDataF{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    
+      }
+
+      /*class for image of the view register*/
+  .imgRegister{
+    display: flex;
+    width: 80%;
+  }
+
+
+    .containerLogin{
+        margin-top: 0px;
+        width: 35%;
+    }
+    .contImgLogin{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .imgLogin{
+        width: 60%;
+        height: 150px;
+    }
+}

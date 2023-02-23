@@ -1,0 +1,790 @@
+/*::::::::Style for bar navigation:::::::::::*/
+/*::::::::Style for bar navigation:::::::::::*/
+/*::::::::Style for bar navigation:::::::::::*/
+
+.navigation{
+    background: rgb(16, 16, 19);
+    opacity: 90%;
+    width: 100%;
+    margin-right: 0px;
+    height: 70px;
+    /*display: flex;
+    align-items: row;
+    justify-content: space-between;*/
+}
+
+.logNav{
+    height: 60px;
+    width: 100px;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: none;
+}
+
+.main{
+    border: none;
+    
+    /*background: hwb(240 7% 87% / 0.849);*/
+    background:rgba(0,0,0,0.0);
+}
+
+.navbar-collapse{
+    border-color: none;
+    border:none;
+}
+/*container Button*/
+.navbar-header{
+    border-color: 4px solid #5e1020c9;
+    /*background-color: rgb(102, 11, 113);*/
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+/*Style for icon for show list main in main menu*//*Style for icon for show list main in main menu*/
+.navbar-toggle{
+    background: hsla(320, 11%, 5%, 0.479);
+}
+
+/*class forlis main Menu desplegable*//*class forlis main Menu desplegable*/
+.navbar-nav{
+    /*width: 400px;*/
+    width: 60%;
+    background: hsla(0, 3%, 8%, 0.9);
+    font-size: 18px;
+    margin-top: 0px;
+    height: 400px;
+}
+
+.btnMain{
+    border-top: 2px solid rgba(0, 0, 0 , .5);
+}
+
+.btnMain:hover{
+    background:rgba(0, 0, 0 , .5);
+    border-bottom: 2px solid rgba(252, 244, 244, 0.89);
+}
+/*.btnMainSelected{
+    background:rgba(0, 0, 0 , .5);
+}*/
+
+/*container button for container button list*/
+.btnContBtnList{
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+/*class for button option*/
+.btnMainList{
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    height: 100%;   
+    width: 100%;
+    
+    /*display: flex;3
+    align-items: center;
+    justify-content: center;*/
+    /*padding-left: 5px;
+    padding-right: 5px;*/
+    color: rgb(233, 228, 237);
+    
+}
+
+/*classfor button productos*/
+.btnProduct{
+    margin-right: 10px;
+        font-size: 20px;
+        color: white;
+        margin-right: 5px;
+
+}
+
+.btnMainList:hover{
+    background:rgba(0, 0, 0 , .5);
+    color: rgb(233, 228, 237);
+    text-decoration: none;
+}
+
+/*class for conttainer list in to the button*/
+.optionList1{
+    height: 230px;
+    align-items: center;
+    background-color: red;
+    
+}
+
+/*class for container contain option list products*/
+.optionList{
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    width: 100%;
+    background-color: rgb(0, 0, 0, .9);
+    padding-bottom: 0px;
+    /*background: hsla(0, 0%, 2%, 0.49);*/
+
+}
+
+.itemListBtn{
+    margin-top: 5px;
+    height: 40px;
+    width: 100%;
+    text-align: justify;
+    font-size: 15px;
+    font-weight: bold;
+    text-indent: 5px;
+    color: blanchedalmond;
+    text-decoration: none;
+    background:  hsla(300, 100%, 1%, 0.49);
+}
+
+
+.itemListBtn:hover{
+    background:rgba(0, 0, 0 , .5);
+    color: rgb(233, 228, 237);
+    border-bottom: 2px solid  rgb(233, 228, 237);;
+    text-decoration: none;
+}
+
+
+/*Container elemento home*/
+.containerHome{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /*padding: 10px;*/
+    padding-top: 0px;
+}
+.headDoc{
+    margin-left: 20px;
+}
+.contElemntLeft{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 70%;
+}
+.contElemntRight{
+    display: flex;
+    width: 60%;
+}
+.formDoc{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    justify-content: flex-start;
+}
+.contDataUpload{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    height: 250px;
+    border: 3px;
+    background: rgba(93, 28, 125, .200);
+    border-radius: 5%;
+    padding-right: 5px;
+}
+
+.element{
+    margin-top: 10px;
+    color: beige;
+    margin-left: 5px;
+}
+.btbUpFile{
+    width: 100px;
+    background: rgba(57, 107, 128, 0.413);
+    border: none;
+    height: 30px;
+    border-radius: 2%;
+}
+.btbUpFile:hover{
+    background: rgba(13, 64, 85, 0.413);
+    border: none;
+}
+
+/*class for button product*/
+.btnMainList{
+    margin-left: 5px;
+    margin-left: 10px;
+}
+
+
+
+.contLogoHeader2
+{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    width: 100%;
+    align-items: center;
+    background-color: none;
+    display: none;
+    /*background: hwb(240 7% 87% / 0.849);*/
+}
+
+.lblWelcome{
+    width: 100%;
+    color: white;
+}
+
+.imgUser{
+    width: 70px;
+    height: 70px;
+}
+
+.contElement{
+    width: 100%;
+    height: 460px;  
+    padding: 10px;
+    /*padding: 5px;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    overflow-y: scroll;
+}
+
+
+
+/*Estyle for modal add product*/
+
+.modal1{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(43, 43, 46, 0.9);
+    display: block;
+}
+
+
+.modalw{
+
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(19, 19, 100, 0.9);
+    display: block;
+
+}
+
+.bodyModal{
+    width: 100%;
+    height: 100%;
+
+    display: -webkit-inline-flex;
+    display: -moz-inline-flex;
+    display: -ms-inline-flex;
+    display: -o-inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formModal{
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-radius: 20px;
+    border: 2px solid rebeccapurple;
+}
+
+.dataP{
+    width: 70%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contBtnAddP{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.btnAddP{
+    width: 100px;
+    height: 30px;
+    background-color: rgb(63, 63, 190);
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.btnCloseInfo{
+    width: 150px;
+}
+.btnpCancel{
+    background-color: rgb(235, 175, 23);
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+/*class for contain button option product*/
+.contBtnProduct{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5px;
+    margin-top: 5px;
+    padding-top: 10px;
+}
+
+.btnMainSelected{
+    height: 35px;
+    background:rgba(0, 0, 0 , .5);
+    border-radius: 2px;
+    border-bottom: 2px solid white;
+}
+
+
+/*SLIDE  FOTOS HOME*//*SLIDE  FOTOS HOME*//*SLIDE  FOTOS HOME*/
+/*SLIDE  FOTOS HOME*//*SLIDE  FOTOS HOME*//*SLIDE  FOTOS HOME*/
+/*SLIDE  FOTOS HOME*/
+.contSlider{
+    padding: 10px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.slider {
+    
+	width: 100%;
+	margin: auto;
+	overflow: hidden;
+    height: 100%;
+}
+
+.slider ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+    padding: 10px;
+	
+	animation: cambio 20s infinite alternate linear;
+}
+
+/*container for change the height and width of the image of home*/
+.slider li {
+	width: 100%;
+    height: 500px;
+	list-style: none;
+}
+
+
+.slider img {
+	width: 100%;
+    height: 100%;
+}
+
+@keyframes cambio {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+
+/*style for new main on the header:::::::::*//*style for new main on the header:::::::::*/
+/*style for new main on the header:::::::::*//*style for new main on the header:::::::::*/
+/*style for new main on the header:::::::::*//*style for new main on the header:::::::::*/
+
+
+.newMain{
+    background-color: rgb(43, 43, 141);
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*style logo empresa*/
+.imgUserMain{
+    height: 40px;
+    width: 40px;
+}
+/*
+!contenedor de los botones del menu
+*/
+.contBtnMainN{
+    background-color: rgb(43, 43, 141);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 70%;
+}
+
+.optionMenu{
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+
+    width: 100px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-left: 15px;
+    padding-right: 10px;
+
+
+}
+
+.optionMenu:hover{
+     color: white;
+    font-size: 15px;
+    text-decoration: none;
+
+    width: 80px;
+    height: 35px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 0, .4);
+    border-bottom: 2px solid white;
+   
+}
+
+/* !container imgHome :::::::::::::::::::::::::::::: *//* !container imgHome :::::::::::::::::::::::::::::: */
+.secction{
+    background-image: url("../public/images/fondHome.png");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 3px;
+    height: 370px;
+    width: 100%;
+
+}
+
+.imgHome{
+    height: 100%;
+    width: 50%;
+}
+
+.emailHome{
+    margin-top: 270px;
+    position:absolute;
+    margin-left: -200px;
+}
+
+.lblMailHome{
+    color: white;
+}
+
+.elementHome{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+
+    margin-bottom: 10px;
+}
+
+/* ! class for element container data company */
+
+.contDataInfoHome{
+    margin-top: 10px;
+}
+
+.contVideo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.video{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 300px;
+    padding-left: 0px;
+    background-color: rgb(91, 80, 80);
+}
+
+.filevideo{
+
+    width: 400px;
+}
+
+
+/* ! class for container data  footer-home */
+.footerHome{
+    background-color: rgb(43, 43, 141);
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+}
+
+.contElementListMainFooter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contListMainH{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+}
+
+.contListMainH label{
+    color: white;
+}
+
+/*class for cont re social an sen comment*/
+.contComentRedSocial{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contInpComent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.intputComent{
+    background-color: rgb(0, 0, 0, .4);
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 180px;
+    height: 28px;
+}
+
+.lblComment{
+    margin-top: 5px;
+    color: white;
+    font-size: 12px;
+}
+
+
+@media screen and (min-width: 769px){
+    
+    .contBtnMainN{
+        
+        width: 40%;
+    }
+
+    /*class for container logo and email in home*/
+
+    .emailHome{
+        margin-top: 300px;
+        margin-left: -1100px;
+    }
+
+    .imgHome{
+        height: 400px;
+        width: 50%;
+    }
+
+    /*clas for info element home*/
+
+    .elementHome{
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+    }
+    
+    .contDataInfoHome{
+        width: 30%;
+    }
+
+    /*class for video*/
+    .video{
+        height: 200px;
+    }
+
+    /*cont element data elemtn 1*/
+    .contDataInfoHome1{
+        width: 40%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .footerHome{
+        display: flex;
+        flex-direction: row;
+        
+        justify-content: center;
+        
+    }
+
+    .contInpComent{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: -50px;
+    }
+
+
+   
+
+    .contElementListMainFooter{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        width: 40%;
+    }
+    
+
+    
+    .contComentRedSocial{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        width: 45%;
+    }
+
+    .contredS{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: -75px;
+    }
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    .main{
+        display: flex;
+        width: 120%;
+        justify-content: flex-end;
+        margin-bottom: 0px;
+        align-items: center;
+    }
+
+    .navigation{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    
+    
+    .nav{
+         margin-bottom: 5px;
+    }
+
+    .btnMain{
+        border-top: 0px solid rgba(0, 0, 0 , .5);
+    }
+    .btnMain:hover{
+        background: none;
+    }
+
+    ul li a{
+        margin-right: 10px;
+        font-size: 20px;
+        color: white;
+        margin-right: 5px;
+        /*border: 2px solid rebeccapurple;*/
+
+    }
+
+    .btnMain:hover{
+       /* background: rgb(140, 132, 148);*/
+        border-bottom: 2px solid white;
+    }
+    /*class forlis main Menu desplegable*//*class forlis main Menu desplegable*/
+
+
+    /*Container button main*/
+    .navbar-nav{
+        width: 100%;
+        height: 45px;
+        margin-right: 5px;
+        margin-left: 10px;
+        display: flex;
+        align-content: space-between;
+        justify-content: flex-end;
+        background: none;
+    }
+
+    .contDataUpload{
+        width: 50%;
+        border-radius: 5%;
+    }
+
+    .contLogoHeader2
+    {
+        display: flex;
+        background-color:none;
+    }
+
+    /*Form modal for add product*/
+    .formModal{
+        width: 40%;
+        
+    }
+
+
+    /*:::::::::::::Style products::::::::::::::*/
+    .contElement{
+        justify-content: flex-start;
+    }
+
+
+    .contSlider{
+        height: 455px;
+        width: 100%;
+    }
+    .slider img {
+        width: 100%;
+        height: 400px;
+    }
+    
+    
+}
