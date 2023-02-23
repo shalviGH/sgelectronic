@@ -96,17 +96,26 @@
 			else{ ?>
 
 			<header class="newMain">
+
+
 				<img src="<?php echo RUTA_IMG?>/imgProfile.png" class="imgUserMain">
 
-				<div class="contBtnMainN">
-					<a class="optionMenu js-btnHome" href="<?= RUTA_URL;?>/Paginas/index">Home</a>
-					<a class="optionMenu js-btnAbout" href="<?= RUTA_URL;?>/Paginas/about">About</a>
-					<a class="optionMenu" href="">Services</a>
-					<a  class="optionMenu js-btnProductM"  href="<?= RUTA_URL;?>/Paginas/products">Products</a>
-					<a  class="optionMenu js-btnProductMw"  href="<?= RUTA_URL;?>/Paginas/login">Login</a>
+					<div class="contBtnMainN js-conlistBtnMain">
 
-					<img src="<?php echo RUTA_IMG?>/imgProfile.png" class="imgUserMain js-imgLoginForOpenLog">
-				</div>
+						<a class="optionMenu js-btnHome" href="<?= RUTA_URL;?>/Paginas/index">Home</a>
+						<a class="optionMenu js-btnAbout" href="<?= RUTA_URL;?>/Paginas/about">About</a>
+						<a class="optionMenu" href="">Services</a>
+						<a  class="optionMenu js-btnProductM"  href="<?= RUTA_URL;?>/Paginas/products">Products</a>
+						<a  class="optionMenu js-btnProductMw"  href="<?= RUTA_URL;?>/Paginas/login">Login</a>
+
+						<img src="<?php echo RUTA_IMG?>/imgProfile.png" class="imgUserMain js-imgLoginForOpenLog">
+					</div>
+
+					<button type="button" class="navbar-toggle js-btnShowMain" data-toggle="collapse" data-target="#example-navbar-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
 
 			</header>
 			
@@ -116,127 +125,6 @@
 			
 		
 			
-
-
-		
-
-
-		<!--
-
-		<div class="secction">
-
-		   <img src=" <?php echo RUTA_IMG ?>/carRobot.jpg" class="imgHome">
-		   <img src=" <?php echo RUTA_IMG ?>/carRobot.jpg" class="imgHome">
-		   
-		<div class="emailHome">
-		    <img src="<?php echo RUTA_IMG?>/imgProfile.png" class="imgUserMain">
-			<label class="lblMailHome">Salvadorhacje@gmail.com</label>
-		</div>
-	
-		</div>
-
-		<div class="elementHome">
-			<div class="contDataInfoHome contDataInfoHome11">
-				<h4>title 1</h4>
-				<p>jvcbskdj acjkdsna jfjcjsa ncljjad
-					ajhfjdsaljfkljdsakcljfkljkldsjajfchjldhfljhdjlfjlahjj jjdjd
-					ohdoud 
-					vuo hu h uuu   uhuohvouhsf fjaljdfnjfcas   jchs jvhhsn jdctojewishhvsjhjhj
-					jvkjck
-					vjhjsfhfjsnkjfv vjnmfds vjnsjkd vjnedjf fvjedhws vejnk vjknajd 
-					bcvkv  vvsjfv vjsoiuf fjfsofid vjcdsrg vjshj
-				</p>
-
-				<div>
-					<h4>title 2</h4>
-					<p>jvcbskdj acjkdsna jfjcjsa ncljjad
-						ajhfjdsaljfkljdsakcljfkljkldsjajfchjldhfljhdjlfjlahjj jjdjd
-						ohdoud 
-						vuo hu h uuu   uhuohvouhsf fjaljdfnjfcas   jchs jvhhsn jdctojewishhvsjhjhj
-						jvkjck
-						vjhjsfhfjsnkjfv vjnmfds vjnsjkd vjnedjf fvjedhws vejnk vjknajd 
-						bcvkv  vvsjfv vjsoiuf fjfsofid vjcdsrg vjshj
-					</p>
-				</div>
-			</div>
-
-			<div class="contDataInfoHome1">
-			
-				
-				<div>
-					<h4>title 3 </h4>
-					<p>jvcbskdj acjkdsna jfjcjsa ncljjad
-						ajhfjdsaljfkljdsakcljfkljkldsjajfchjldhfljhdjlfjlahjj jjdjd
-						ohdoud 
-						vuo hu h uuu   uhuohvouhsf fjaljdfnjfcas   jchs jvhhsn jdctojewishhvsjhjhj
-						jvkjck
-						vjhjsfhfjsnkjfv vjnmfds vjnsjkd vjnedjf fvjedhws vejnk vjknajd 
-						bcvkv  vvsjfv vjsoiuf fjfsofid vjcdsrg vjshj
-					</p>
-				</div>
-
-				
-				<h3>Video</h3>
-				<video class="video"  src="<?php echo RUTA_IMG?>/video.mp4" autoplay muted loop></video>
-				<!--video class="video2" src="<?php echo RUTA_IMG?>/video.mp4" poster="presentacion.jpg" controls></video-->
-			</div>	
-		<!--/div>
-
-		<div class="footerHome">
-			
-			<div class="contElementListMainFooter">
-				
-				<img src="<?php echo RUTA_IMG?>/imgProfile.png" class="imgUserMain">
-
-				<div class="contListMainH">
-					<label> home</label>
-					<label> Discovery</label>
-					<label>Photo</label>
-					<label>Contact</label>
-
-				</div>
-
-				<div class="contListMainH">
-					<label>About</label>
-					<label>Help</label>
-					<label>Terms</label>
-					<label>Calidad</label>
-				</div>
-
-				<div class="contListMainH">
-					<label>About</label>
-					<label>Help</label>
-					<label>Terms</label>
-					<label>Calidad</label>
-
-				</div>
-
-			</div>
-
-			<div class="contComentRedSocial">
-
-				<div class="contInpComent">
-					<input type="text">
-					<label>write your comment</label>
-				</div>
-
-				<div>
-					<img src="<?php echo RUTA_IMG?>/imgProfile.png" class="imgUserMain">
-					<img src="<?php echo RUTA_IMG?>/imgProfile.png" class="imgUserMain">
-					<img src="<?php echo RUTA_IMG?>/imgProfile.png" class="imgUserMain">
-				</div>
-			</div>	
-		</div-->
-
-
-
-			
-
-	
-
-
-
-
 
 
 

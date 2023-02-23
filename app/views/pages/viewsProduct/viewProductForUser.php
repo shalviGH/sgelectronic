@@ -1,4 +1,67 @@
 
+        <?php 
+                if(isset($data['product'])){
+                    $op = $data['product'];
+                }
+                if(isset($data['productFound'])) {
+                    $op = $data['productFound'];
+
+                    //echo "la busqueda de producto existe";
+                }
+           ?>
+
+            <div class="contianerProductList3">
+                <div class="productMoresSales">
+                    <!--label >Productos mas vendidos</label-->
+                    <div class="contiInfoProduct">
+                        <label class="titleProduct">Arduino</label>
+                        <img src="<?php echo RUTA_IMG?>/imgProfile.png" width="70px" height="70px" class="imgProductInfw">
+                        <label class="lblDescPro">Arduino marca génerico</label>
+                        <label class="lblDatePro">12/04/2023</label>
+                        
+                    </div>
+
+                    <div class="contiInfoProduct">
+                        <label class="titleProduct">Arduino</label>
+                        <img src="<?php echo RUTA_IMG?>/imgProfile.png" width="70px" height="70px" class="imgProductInfw">
+                        <label class="lblDescPro">Arduino marca génerico</label>
+                        <label class="lblDatePro">12/04/2023</label>
+                        
+                    </div>
+
+                </div>
+
+                <div class="listProduct2">
+
+                <?php foreach($op as $product) : ?>
+
+                    <div class="contiInfoProduct contiInfoProductP">
+                        
+                        <img src="<?php echo RUTA_IMG , ($product->image); ?>" width="70px" height="70px"  class="imgProductInf">
+                        <label class="titleProduct"><?php echo $product->nameProduct;  ?> </label>
+                        <label class="lblDatePro">12/04/2023</label>
+                        
+                    </div>
+
+                <?php 
+                    endforeach;
+                ?>
+
+                    <div class="contiInfoProduct contiInfoProductP">
+                        
+                        <img src="<?php echo RUTA_IMG?>/imgProfile.png" width="120px" height="120px">
+                        <label class="titleProduct">Arduino</label>
+                        <label class="lblDatePro">12/04/2023</label>
+                        
+                    </div>
+
+                </div>
+
+             </div> 
+
+
+
+
 <div class ="containerHome containerProductForUser js-contElementsProducto1">
     
             <?php 
@@ -11,6 +74,17 @@
                     //echo "la busqueda de producto existe";
                 }
            ?>
+
+            
+            
+               
+
+
+
+
+
+
+
 
             <div class="contListImage" >
                  <?php 
