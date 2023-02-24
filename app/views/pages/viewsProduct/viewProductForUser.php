@@ -35,11 +35,14 @@
 
                 <?php foreach($op as $product) : ?>
 
-                    <div class="contiInfoProduct contiInfoProductP">
+                    <div class="contiInfoProduct contiInfoProductP js-contProduct">
                         
-                        <img src="<?php echo RUTA_IMG , ($product->image); ?>" width="70px" height="70px"  class="imgProductInf">
-                        <label class="titleProduct"><?php echo $product->nameProduct;  ?> </label>
-                        <label class="lblDatePro">12/04/2023</label>
+                        <img src="<?php echo RUTA_IMG , ($product->image); ?>" width="70px" height="70px"  class="imgProductInf imgProducts" id="urlImg">
+                        <label class="titleProduct js-nameProduct"><?php echo $product->nameProduct;  ?> </label>
+                        <!--label class="lblDatePro">12/04/2023</label-->
+                        <label class="lblPrecio">Precio:   $ <label class="js-prePro"  style="margin-left:10px; color:blue;"><?php echo $product->price;  ?></label>
+                        .00 MX</label>
+                        <label class="lblDatePro js-cantProduct" style="display:none"><?php echo $product->amount;  ?></label> 
 
                         <?php 
                             $codB = $product->codBarra;
@@ -214,7 +217,7 @@
 <!--Modal for show product info---><!--Modal for show product info--->
 
 <div class="modal js-ModalInfoProduct">
-        <div class="bodyModal ">
+        <div class="bodyModal">
             
             <form action="<?= RUTA_URL;?>/ProductController/productUser" method="post" enctype="multipart/form-data" class="formModal mApartarProducto">
                 <div class="dataP">

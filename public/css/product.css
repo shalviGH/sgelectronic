@@ -461,8 +461,8 @@ table {
 
 /*class for image product*/
 .imgProductInf{
-    width: 110px;
-    height: 110px;
+    width: 140px;
+    height: 140px;
     margin-top: 10px;
     border-radius: 10px;
 }
@@ -493,6 +493,16 @@ table {
     padding-left: 10px;
     margin-top: 1px;
     margin-bottom: 5px;
+    padding-left: 30px;
+}
+
+/*clase del label del precio del producto*/
+.lblPrecio{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    font-family: Arial;
+    font-size: 12px;
     padding-left: 30px;
 }
 
@@ -547,20 +557,20 @@ table {
         flex-wrap: wrap;
         align-items: flex-start;
         justify-content: center;
-        height: 400px;
+        height: 490px;
         width: 35%;
     }
 
     /*class for container list produc*/
     .listProduct2{
         /*background-color: rgba(0, 0, 0, .6);*/
-        border-left: 2px solid rgb(14, 13, 12);
+        border-left: 2px solid rgba(0, 1, 0, .4);
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         align-items: flex-start;
         justify-content: center;
-        height: 400px;
+        height: 490px;
         width: 65%;
 
     }
