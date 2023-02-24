@@ -68,22 +68,36 @@
                             }
 
                             ?>
+
+
+                        <div class="contBtnProducts contBtnApart">
+                            <a href="#" id="js-btnApartUst" <?php if($view == 'ProIndex'){?> class="btn btn-success  js-btnApartProIndex" <?php  }else{?> class="btn btn-success  js-contProductA"  <?php } ?> 
+                                js-codB = " <?php echo $product->codBarra;  ?> "
+                                js-imgP = " <?php echo RUTA_IMG.$product->image;  ?> "
+                                js-nomPro = " <?php echo $product->nameProduct;  ?> "
+                                js-pricePro = " <?php echo $product->price;  ?> "
+                                js-cantPro = " <?php echo $product->amount;  ?> "
+
+                            >Agregar a carrito</a>
+                            
+                        </div>
                         
                     </div>
+
+                    
 
                 <?php 
                     endforeach;
                 ?>
 
-                    <div class="contiInfoProduct contiInfoProductP">
-                        
+                    <!--div class="contiInfoProduct contiInfoProductP">
                         <img src="<?php echo RUTA_IMG?>/imgProfile.png" width="120px" height="120px">
                         <label class="titleProduct">Arduino</label>
                         <label class="lblDatePro">12/04/2023</label>
-                        
-                    </div>
+                    </div-->
 
                 </div>
+                
 
              </div> 
 

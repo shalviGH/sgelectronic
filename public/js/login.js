@@ -83,11 +83,16 @@ $(document).ready(function(){
         $('.js-login').hide();
      });
 
+     /*Function for sbhow messge for appar product if not statr session */
+
      $('.js-btnApartProIndex').on('click', function(){
+         
         $('.js-loginMessage2').show();
+        $('.js-ModalInfoProduct').hide();
      });
     
      $('.btnClosemsLog').on('click', function() {
+      $('.js-ModalInfoProduct').hide();
         $('.js-loginMessage2').hide();
      })
     

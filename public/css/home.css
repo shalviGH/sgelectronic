@@ -474,6 +474,8 @@
 
 
 
+
+
 /* !container imgHome :::::::::::::::::::::::::::::: *//* !container imgHome :::::::::::::::::::::::::::::: */
 .secction{
     background-image: url("../public/images/fondHome.png");
@@ -620,8 +622,34 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-around;
-        width: 40%;
+        width: 90%;
         height: 40px;
+    }
+
+    
+    /*class for icon symbol user*//*class for icon symbol user*//*class for icon symbol user*/
+    /*class for icon symbol user*//*class for icon symbol user*//*class for icon symbol user*/
+    .symbolUser{
+        border-radius: 100%;
+        background-color: rgb(57, 75, 167);
+        font-size: 20px;
+        height: 35px;
+        width: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        text-decoration-line: none;
+        margin-top: 7px;
+        color: aliceblue;
+    }
+
+    .symbolUser:hover{
+        text-decoration: none;
+        text-decoration-line: none;
+        cursor:grab;
+        color: aliceblue;
+        background-color: rgb(7, 13, 45);
     }
 
     .optionMenu{
@@ -630,7 +658,7 @@
         text-decoration: none;
         margin-top: 10px;
         height: 40px;
-        width: 100%;
+        width: 80px;
         display: flex;
         align-items: center;
         justify-content: flex-start;

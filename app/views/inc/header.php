@@ -66,21 +66,34 @@
 
 			if(isset($_SESSION['datos']["userName"]))
 			{
-				$nameUser = $_SESSION['datos']["userName"];?>
+				$nameUser = $_SESSION['datos']["userName"];
+				$array = ($nameUser);
+
+				$simbol = ucfirst($array[0]);
+				
+				?>
 
 				<header class="newMain">
 					<img src="<?php echo RUTA_IMG?>/imgProfile.png" class="imgUserMain">
-					<label class="lblWelcome">Bienvenido: <?php echo $nameUser; ?></label>
+					<label class="lblWelcome"></label>
 
 					<div class="contBtnMainN">
-						<a class="optionMenu js-btnHome" href="<?= RUTA_URL;?>/Paginas/index">Home2</a>
+						<a class="optionMenu js-btnHome" href="<?= RUTA_URL;?>/Paginas/index">Home</a>
 						<a class="optionMenu" href="">About</a>
 						<a class="optionMenu js-btnProfile" href="<?= RUTA_URL;?>/UserController/profile/">Profile</a>
 						<a  class="optionMenu js-btnProduct"  href="<?= RUTA_URL;?>/ProductController/getProducts">Products</a>
 						<a  class="optionMenu js-btnProductM"  href="<?= RUTA_URL;?>/UserController/closeSession">Logout</a>
 
-						<img src="<?php echo RUTA_IMG?>/imgProfile.png" class="imgUserMain js-imgLoginForOpenLog">
+						<a class="symbolUser"><?php echo $simbol; ?></a>
+
+						<!--img src="<?php echo RUTA_IMG?>/imgProfile.png" class="imgUserMain js-imgLoginForOpenLog"-->
 					</div>
+
+					<button type="button" class="navbar-toggle js-btnShowMain" data-toggle="collapse" data-target="#example-navbar-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
 
 				</header>
 		<?php	}
@@ -108,7 +121,7 @@
 						<a  class="optionMenu js-btnProductM"  href="<?= RUTA_URL;?>/Paginas/products">Products</a>
 						<a  class="optionMenu js-btnProductMw"  href="<?= RUTA_URL;?>/Paginas/login">Login</a>
 
-						<img src="<?php echo RUTA_IMG?>/imgProfile.png" class="imgUserMain js-imgLoginForOpenLog">
+						<!--img src="<?php echo RUTA_IMG?>/imgProfile.png" class="imgUserMain js-imgLoginForOpenLog"-->
 					</div>
 
 					<button type="button" class="navbar-toggle js-btnShowMain" data-toggle="collapse" data-target="#example-navbar-collapse">

@@ -54,25 +54,21 @@
 
 		<div class="elementHome">
 			<div class="contDataInfoHome contDataInfoHome11">
-				<h4>title 1</h4>
-				<p>jvcbskdj acjkdsna jfjcjsa ncljjad
-					ajhfjdsaljfkljdsakcljfkljkldsjajfchjldhfljhdjlfjlahjj jjdjd
-					ohdoud 
-					vuo hu h uuu   uhuohvouhsf fjaljdfnjfcas   jchs jvhhsn jdctojewishhvsjhjhj
-					jvkjck
-					vjhjsfhfjsnkjfv vjnmfds vjnsjkd vjnedjf fvjedhws vejnk vjknajd 
-					bcvkv  vvsjfv vjsoiuf fjfsofid vjcdsrg vjshj
+				<h4>Mision</h4>
+				<p>El objetivo principal de la empresa es fomentar, contribuir 
+					e innovar en el campo de la electrónica 
+					entregando todos los componentes electrónicos ajustados a 
+					las necesidades del mercado y de última tecnología
 				</p>
 
 				<div>
-					<h4>title 2</h4>
-					<p>jvcbskdj acjkdsna jfjcjsa ncljjad
-						ajhfjdsaljfkljdsakcljfkljkldsjajfchjldhfljhdjlfjlahjj jjdjd
-						ohdoud 
-						vuo hu h uuu   uhuohvouhsf fjaljdfnjfcas   jchs jvhhsn jdctojewishhvsjhjhj
-						jvkjck
-						vjhjsfhfjsnkjfv vjnmfds vjnsjkd vjnedjf fvjedhws vejnk vjknajd 
-						bcvkv  vvsjfv vjsoiuf fjfsofid vjcdsrg vjshj
+					<h4>Vision</h4>
+					<p>Nuestra visión se basa en ofrecer la confianza 
+						y responsabilidad con cada uno de los clientes, brindando 
+						siempre productos de innovación y la más alta calidad para la elaboración 
+						y diseño de proyectos.
+						El compromiso implica la dedicación para reforzar el área de innovación y tecnología en Venezuela 
+						y así fomentar el campo de la electrónica en el territorio nacional.
 					</p>
 				</div>
 			</div>
@@ -81,21 +77,16 @@
 			
 				
 				<div>
-					<h4>title 3 </h4>
-					<p>jvcbskdj acjkdsna jfjcjsa ncljjad
-						ajhfjdsaljfkljdsakcljfkljkldsjajfchjldhfljhdjlfjlahjj jjdjd
-						ohdoud 
-						vuo hu h uuu   uhuohvouhsf fjaljdfnjfcas   jchs jvhhsn jdctojewishhvsjhjhj
-						jvkjck
-						vjhjsfhfjsnkjfv vjnmfds vjnsjkd vjnedjf fvjedhws vejnk vjknajd 
-						bcvkv  vvsjfv vjsoiuf fjfsofid vjcdsrg vjshj
-					</p>
+					<h4>Valores</h4>
+					<p>Compromiso con nuestros clientes que han depositado su confianza en nosotros.</p>
+					<p>Calidad en nuestros productos y servicios, nuestra carta de recomendación.</p>
+					<p>Honestidad en nuestro trabajo y procesos, hacen de nuestros clientes una relación de sincera amistad</p>
 				</div>
 
 				
 				<h3>Video</h3>
 				<video class="videokk"  controls  height="300px">
-					<source class="filevideokk" src="<?php echo RUTA_IMG?>/video4.mp4"  type="video/mp4" width="100px">
+					<source class="filevideokk" src="<?php echo RUTA_VIDEO?>/video4.mp4"  type="video/mp4" width="100px">
 				</video>
 				<!--video class="video2" autoplay muted loop  src="<?php echo RUTA_IMG?>/video.mp4" poster="presentacion.jpg" controls></video-->
 			</div>	
