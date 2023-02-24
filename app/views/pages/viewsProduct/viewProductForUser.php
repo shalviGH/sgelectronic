@@ -40,6 +40,31 @@
                         <img src="<?php echo RUTA_IMG , ($product->image); ?>" width="70px" height="70px"  class="imgProductInf">
                         <label class="titleProduct"><?php echo $product->nameProduct;  ?> </label>
                         <label class="lblDatePro">12/04/2023</label>
+
+                        <?php 
+                            $codB = $product->codBarra;
+
+                            if(isset($data['productImage']))
+                            {
+                                //echo "Si hay imagenes";
+                                // $var = $data['productImage']['idProducto'];
+                            // echo $var;
+                            foreach($data['productImage'] as $img):
+                            // $numImg = 1;
+                                    if($codB == $img->idProducto){  #echo   $img->nombreImg;?>
+                                    
+                                        <div class="listImg js-imgList" >
+                                            <img  class="imgL" src="<?php echo RUTA_IMG.$img->nombreImg ?>" 
+
+                                                   
+                                                    height="20" width="20" id="imgProductw">
+                                        </div>
+                                    <?php   
+                                    }
+                                endforeach;
+                            }
+
+                            ?>
                         
                     </div>
 

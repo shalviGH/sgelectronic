@@ -424,7 +424,7 @@ table {
     align-items: center;
     justify-content: center;
     width: 95%;
-    height: 400px;
+    height: 500px;
     border: 2px solid royalblue;
     margin: auto;
 
@@ -432,12 +432,12 @@ table {
 
 /*container for product more sales*/
 .productMoresSales{
-    display: flex;
+    display: none;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
+    align-items: center;
+    justify-content: flex-start;
     flex-direction: column;
-    height: 400px;
+    height: 490px;
     width: 35%;
     overflow-y: scroll;
 }
@@ -451,13 +451,18 @@ table {
     justify-content: center;
     border-radius: 10px;
     margin: 10px;
-    width: 90%;
+    width:90%;
+}
+
+/*class for list product all *//*class for list product all *//*class for list product all */
+.contiInfoProductP{
+    width: 45%;
 }
 
 /*class for image product*/
 .imgProductInf{
-    width: 140px;
-    height: 140px;
+    width: 150px;
+    height: 150px;
     margin-top: 10px;
     border-radius: 10px;
 }
@@ -468,6 +473,7 @@ table {
     font-size: 13px;
     padding-left: 10px;
     margin-top: 5px;
+    padding-left: 30px;
 }
 
 .lblDescPro{
@@ -476,6 +482,7 @@ table {
     font-size: 12px;
     padding-left: 10px;
     margin-top: 2px;
+    padding-left: 30px;
 
 }
 
@@ -486,26 +493,29 @@ table {
     padding-left: 10px;
     margin-top: 1px;
     margin-bottom: 5px;
+    padding-left: 30px;
 }
 
-/*class for container list produc*/
+
+
+/*class for container list produc all*//*! container list product*/
 .listProduct2{
     /*background-color: rgba(0, 0, 0, .6);*/
-    border-left: 2px solid rgb(14, 13, 12);
+    /*border-left: 2px solid rgb(14, 13, 12);*/
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    height: 400px;
-    width: 65%;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 490px;
+    width: 100%;
     overflow-y: scroll;
 
    
 }
 
-.contiInfoProductP{
-    width: 70%;
-}
+
+
 
 
 

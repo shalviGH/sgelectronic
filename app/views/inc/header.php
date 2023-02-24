@@ -75,7 +75,7 @@
 					<div class="contBtnMainN">
 						<a class="optionMenu js-btnHome" href="<?= RUTA_URL;?>/Paginas/index">Home2</a>
 						<a class="optionMenu" href="">About</a>
-						<a class="optionMenu js-btnProfile" href="<?= RUTA_URL;?>/UserController/profile/">Profile2</a>
+						<a class="optionMenu js-btnProfile" href="<?= RUTA_URL;?>/UserController/profile/">Profile</a>
 						<a  class="optionMenu js-btnProduct"  href="<?= RUTA_URL;?>/ProductController/getProducts">Products</a>
 						<a  class="optionMenu js-btnProductM"  href="<?= RUTA_URL;?>/UserController/closeSession">Logout</a>
 
@@ -102,8 +102,8 @@
 
 					<div class="contBtnMainN js-conlistBtnMain">
 
-						<a class="optionMenu js-btnHome" href="<?= RUTA_URL;?>/Paginas/index">Home2</a>
-						<a class="optionMenu js-btnAbout" href="<?= RUTA_URL;?>/Paginas/about">About2</a>
+						<a class="optionMenu js-btnHome" href="<?= RUTA_URL;?>/Paginas/index">Home</a>
+						<a class="optionMenu js-btnAbout" href="<?= RUTA_URL;?>/Paginas/about">About</a>
 						<a class="optionMenu" href="">Services</a>
 						<a  class="optionMenu js-btnProductM"  href="<?= RUTA_URL;?>/Paginas/products">Products</a>
 						<a  class="optionMenu js-btnProductMw"  href="<?= RUTA_URL;?>/Paginas/login">Login</a>
