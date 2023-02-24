@@ -456,13 +456,13 @@ table {
 
 /*class for list product all *//*class for list product all *//*class for list product all */
 .contiInfoProductP{
-    width: 45%;
+    width: 40%;
 }
 
 /*class for image product*/
 .imgProductInf{
-    width: 150px;
-    height: 150px;
+    width: 110px;
+    height: 110px;
     margin-top: 10px;
     border-radius: 10px;
 }
