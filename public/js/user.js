@@ -17,7 +17,7 @@ $(document).ready(function(){
 
     });
 
-    $('.js-btnCancelAddUs').on('click', function(){
+    $('.js-bacloseMoAddus').on('click', function(){
         //limpiamos todo los campos del formulario	
         $(".js-formUser")[0].reset();
         $('.js-ModalAddUser').hide(8);
@@ -70,7 +70,7 @@ $(document).ready(function(){
         //abrimos el modal para actualizar el usuario
         $('.js-ModalAddUser').show();
         //cambiamos el titulo del modal
-        $('.js-titleModalUser').text('Actualizar usuario');
+        $('.js-titleFormUser').text('Actualizar usuario');
         //cambiamos el atributo para editar al usuario
         $('.js-formUser').attr('action',rutaUrl + '/userController/updateUserAd/');
         //cambiamos el texto del boton para editar al usuario

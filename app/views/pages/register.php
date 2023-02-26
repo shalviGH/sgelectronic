@@ -13,12 +13,12 @@
 			<div class="contDataForm1 contDataFormRegister">
                  
                 
-                    <div class="contInpRegister c2btnRegister">
+                    <div class="contInpRegister c2btnRegister ">
                         <!--label>Nombre:</label-->
                         <label class="lblTitleRegister">Create account</label>
                     </div>
 
-                    <div class="contInpRegister c2btnRegister">
+                    <div class="contInpRegister c2btnRegister ddd">
                         <!--label>Nombre:</label-->
                         <label class="lblRegister">Already an user? <a>Sign in</a></label>
                     </div>

@@ -638,6 +638,44 @@
   }
 
 
+  /*class for form for register user*/
+  /*class for register user form*/
+
+  /*class for container data register form admin*/
+  .contDataFormRegister{
+    background-color: none;
+  }
+  
+  /*class container for container title form for register user*/
+  .titleFormAddUser{
+    margin-top: -50px;
+    margin-bottom: 10px;
+  }
+  /*class for container inptu fro register user*/
+  .contInpRegUs{
+    background-color: none;
+  }
+
+  .inputRegUserA{
+    width: 47%;
+  }
+
+  /*class for ccontainer button register user*/
+  .contBtnSaveReg{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /*class for button for re4gister user*/
+  .btnSaveData{
+    width: 40%;
+  }
+
+
+
+
 
  
 
@@ -708,8 +746,13 @@
         justify-content: center;
     }
 
-    .imgLogin{
-        width: 60%;
-        height: 150px;
-    }
+  .imgLogin{
+      width: 60%;
+      height: 150px;
+  }
+
+  /*class for container data register form admin*/
+  .contDataFormRegister{
+    width: 90%;
+  }
 }

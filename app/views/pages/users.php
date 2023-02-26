@@ -92,51 +92,82 @@
         <div class="modal js-ModalAddUser">
         <div class="bodyModal">
             
-            <form action="<?= RUTA_URL;?>/UserController/addUserAd" method="POST" enctype="multipart/form-data" class="formModal js-formUser">
-                <label class="js-titleModalUser">Agregar usuario</label>
-                
-                <div class="dataP">
-                    <label>Nombre:</label>
-                    <input id="js-name" type="text" name="name" required />
-                </div>
-                <div class="dataP">
-                    <label>Last Name:</label>
-                    <input type="text" id="js-lastName" name="lastName" required/>
-                </div>
-                <div class="dataP">
-                    <label>Email:</label>
-                    <input type="text" id="js-email" name="email" required/>
-                </div>
-                <div class="dataP">   
-                    <label>Phone:</label>
-                    <input type="text" id="js-phone" name="phone" required/>
-                </div>
-                <div class="dataP">
-                    <label>UserName:</label>
-                    <input type="text" id="js-userName" name="userName" required />
-                </div>
-                <div class="dataP">
-                    <label>Pasword:</label>
-                    <input type="text" id="js-pass" name="password" required />
-                    <input type="text" id="js-idUser" name="idUser" required />
-                </div>
-                <div class="dataP">
-                    <label>Tipo Usuario</label>
-                    <select name="typeUser">
-                        <option value="1">Admin</option>
-                        <option value="2">User</option>
-                    </select>
-                </div>
-               
-                <div class="dataP contBtnModal">
-                    <input type="submit" value="Send" class="btn btn-success js-btnModalUser"/>
-                    <a class="btn btn-danger js-btnCancelAddUs" unset()>Cancel</a>
-                </div>
+        <div class="contFormRegister">
 
-                
-            </form>
+            <form action="<?= RUTA_URL;?>/UserController/addUserAd" method="POST" enctype="multipart/form-data" class="formLogin formRegister js-formUser">
+
+                <div class="iconClose js-bacloseMoAddus"> <p>x</p> </div>	
+                    <div class="contDataForm1 contDataFormRegister">
+                        <div class="contInpRegister c2btnRegister3 titleFormAddUser">
+                            <!--label>Nombre:</label-->
+                            <label class="lblTitleRegister js-titleFormUser">Registrar nuevo usuario</label>
+                        </div>
+
+                        <div class="contInpRegister c2btnRegister contInpRegUs">
+                            <!--label>Nombre:</label-->
+                            <input class="inpRegister inputRegUser inputRegUserA" type="text" id="js-name" name="name"required placeholder="Name" required
+                            oninput = "this.value = this.value.replace(/[^a-zA-Z0-9.@_]/,'')" />
+
+                            <input class="inpRegister inputRegUserA" type="text" id="js-lastName" name="lastName" required placeholder="Last Name" required
+                            oninput = "this.value = this.value.replace(/[^a-zA-Z0-9.@_]/,'')" />
+                        </div>
+                        <div class="contInpRegister c2btnRegister contInpRegUs">
+                            <!--label>Nombre:</label-->
+                            <input class="inpRegister inputRegUser inputRegUserA" type="text" id="js-email" name="email"required placeholder="Email" required
+                            oninput = "this.value = this.value.replace(/[^a-zA-Z0-9.@_]/,'')" />
+
+                            <input class="inpRegister inputRegUserA" type="text" name="phone"  id="js-phone" required placeholder="Phone" required
+                            oninput = "this.value = this.value.replace(/[^a-zA-Z0-9.@_]/,'')" />
+                        </div>
+                        <div class="contInpRegister c2btnRegister contInpRegUs">
+                            <!--label>Nombre:</label-->
+                            <input class="inpRegister inputRegUser inputRegUserA" type="text"  id="js-userName" name="userName"required placeholder="Username" required
+                            oninput = "this.value = this.value.replace(/[^a-zA-Z0-9.@_]/,'')" />
+
+                            <input class="inpRegister inputRegUserA" type="text" name="password"   id="js-pass" required placeholder="password" required
+                            oninput = "this.value = this.value.replace(/[^a-zA-Z0-9.@_]/,'')" />
+
+                            <input class="" type="hidden" name="idUser"  id="js-idUser"/>
+                        </div>
+
+                        <div class="contInpRegister c2btnRegister contInpRegUs">
+                            <select name="typeUser" class="inpRegister inputRegUserA" id="js-tipoUser">
+                                <option value="1">Admin</option>
+                                <option value="2">User</option>
+                            </select>
+                        </div>
+                    
+                        
+                            <!--label>Nombre:</label-->
+                        <!--div class="contInpRegister">    
+                        inputRegisterUser                 <input class="inpRegister" type="text" name="userName" required placeholder="User Name" required 
+                            oninput = "this.value = this.value.replace(/[^a-zA-Z0-9.@_]/,'')" />
+                        </div>
+                        <div class="contInpRegister"> 
+                        inputRegisterUser              <input class="inpRegister" type="password" name="pass" required placeholder="Password" required
+                            oninput = "this.value = this.value.replace(/[^a-zA-Z0-9.@_]/,'')" />
+                        </div-->    
+
+                        <div class="contInpRegister contBtnSaveReg">
+                            <input type="submit" value="Guardar" class="btnRegisterEnter btnSaveData"/>
+                            <!--i class="btn btn-danger js-btnCancel">Cancel</i-->
+                        </div>
+
+                        <!--div class="contInpRegister c2btnRegister inputRegisterUser contLineOption">
+                            <div class="lnRegister"></div> 
+                                <label>Or sign in with</label>
+                            <div class="lnRegister"></div> 
+                            
+                        </div-->
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
+                        
+
+
+
 
 
 
