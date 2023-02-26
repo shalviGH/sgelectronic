@@ -243,10 +243,10 @@
 <!--Modal for show product info---><!--Modal for show product info--->
 <!--Modal for show product info---><!--Modal for show product info--->
 
-<div class="modal js-ModalInfoProduct">
-        <div class="bodyModal">
+<div class="modal js-ModalInfoProduct ">
+        <div class="bodyModal modalProductInfo2" >
             
-            <form action="<?= RUTA_URL;?>/ProductController/productUser" method="post" enctype="multipart/form-data" class="formModal mApartarProducto">
+            <form action="<?= RUTA_URL;?>/ProductController/productUser" method="post" enctype="multipart/form-data" class="formModal ">
                 <div class="dataP">
                     <label id="js-inpNomPro" class="lblNameProduct">qq</label>
                 </div>  

@@ -524,6 +524,12 @@ table {
    
 }
 
+/*! class for modal info product _______________*/
+.modalProductInfo2{
+    margin-top: 140px;
+}
+
+
 
 
 
@@ -595,8 +601,13 @@ table {
         border-radius: 10px;
     }
 
+    /*container for modal in product info*/
+    .modalProductInfo2{
+        margin-top: 0px;
+    }
 
 
+ 
 
 
 
