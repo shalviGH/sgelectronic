@@ -470,6 +470,17 @@
 }
 
 
+.btnListMainM{
+    width: 100%;
+    background-color: rgb(0, 0, 0, .0);
+
+}
+.btnProductListMain{
+    background-color: rgb(0, 0, 0, .0);
+    border: 0px; 
+}
+
+
 
 
 
@@ -688,13 +699,19 @@
         height: 35px;
     }
 
-        /*! class for the boton for show lis main button */
-        .btnProductListMain{
-            background-color: rgb(0, 0, 0, .1);
-            border: 0px;
-            width: 110px;
-            padding-right: 10px;
-        }
+    /*! class for the boton for show list main button */
+    .btnProductListMain{
+        background-color: rgb(0, 0, 0, .1);
+        border: 0px;
+        width: 110px;
+        padding-right: 10px;
+    }
+
+    .btnListMainM{
+        width: 110px;
+    }
+
+
 
     .btnMainSelected{
         height: 30px;

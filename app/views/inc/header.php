@@ -87,7 +87,7 @@
 
 
 
-						<div class="btn-group" style=" ">
+						<div class="btn-group btnListMainM">
 							<button type="button" class="optionMenu dropdown-toggle btnProductListMain js-btnProduct"
 									data-toggle="dropdown" >
 								Productos<span class="caret"></span>
@@ -95,7 +95,13 @@
 
 							<ul class="dropdown-menu" role="menu">
 								<li><a href="<?= RUTA_URL;?>/ProductController/getProducts" style="font-size:15px;">Todos los productos</a></li>
-								<li><a href="<?= RUTA_URL;?>/ProductController/sistemApart/" style="font-size:15px;">Productos Apartados</a></li>
+								
+								<?php if($_SESSION['datos']["tipoUser"] == 1) { ?>
+								<li><a href="<?= RUTA_URL;?>/ProductController/getAllProductsApart/" style="font-size:15px;">Productos Apartados</a></li>
+								<?php }else{?>
+										<li><a href="<?= RUTA_URL;?>/ProductController/sistemApart/" style="font-size:15px;">Productos Apartados</a></li>
+
+							<?php }	?>
 							</ul>
 						</div>
 

@@ -607,6 +607,8 @@
 
   }
 
+
+
   /*class congainer butto register user*/
 
   .btnRegisterEnter{
@@ -678,11 +680,20 @@
         justify-content: flex-end;
       }
 
+      /*Class forcontainer data input for reghister user*/
+      .contDataFormRegister{
+        background-color: white;
+        box-shadow: none;
+
+        width: 55%;
+      }
+
       /*class for image of the view register*/
-  .imgRegister{
-    display: flex;
-    width: 80%;
-  }
+      .imgRegister{
+        display: flex;
+        width: 45%;
+        height: 300px ;
+      }
 
 
 

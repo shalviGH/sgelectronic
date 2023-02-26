@@ -33,7 +33,7 @@
 		{
 			$this->db->query('INSERT INTO users 
 			(name, lastName, email, phone, userName, pass, tipoUser) 
-			VALUES( :nameU, :lastName, :email, :phone, :userName, :pass, :idTipoUser)' );
+			VALUES( :nameU, :lastName, :email, :phone, :userName, SHA1(:pass), :idTipoUser)' );
 
 
 
@@ -72,7 +72,8 @@
 				email = :email, 
 				phone = :phone, 
 				userName = :user, 
-				pass = :pass
+				pass = SHA1(:pass),
+				tipoUser = :tipoUs
 				WHERE idUser = :idU ');
 
 			//vincular values
@@ -83,6 +84,7 @@
 			$this->db->bind(':phone',$data['phone']);
 			$this->db->bind(':user',$data['user']);
 			$this->db->bind(':pass',$data['pass']);
+			$this->db->bind(':tipoUs',$data['typoUser']);
 
 			//execute
 			if($this->db->execute())
@@ -116,7 +118,7 @@
 
 		public function LoginUser($data)
 		{
-			$this->db->query('SELECT * FROM users WHERE userName=:us AND pass= :pwd');
+			$this->db->query('SELECT * FROM users WHERE userName=:us AND pass= SHA1(:pwd)');
 
 			//vincular values
 			$this->db->bind(':us', $data['user']);

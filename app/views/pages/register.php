@@ -13,7 +13,6 @@
 			<div class="contDataForm1 contDataFormRegister">
                  
                 
-               
                     <div class="contInpRegister c2btnRegister">
                         <!--label>Nombre:</label-->
                         <label class="lblTitleRegister">Create account</label>
@@ -54,11 +53,9 @@
                         <div class="lnRegister"></div> 
                         
                     </div>
-
-                </div>
-
-                <img src="<?php echo RUTA_IMG?>/logRegister.png" class="imgRegister" width="200px" height="300px">
             </div>
+            <img src="<?php echo RUTA_IMG?>/logRegister.png" class="imgRegister" >
+
         </div>    
 		
         </form>

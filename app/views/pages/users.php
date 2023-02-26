@@ -22,6 +22,18 @@
 <?php
 		}
     }
+    if(isset($_SESSION['update'])){
+        if($_SESSION['update'] == 'true'){?>
+
+        <div class="alert alert-success alert-dismissable msAlert">
+				<button type="button" class="close" data-dismiss="alert">&times;</button>
+				<strong>¡Message!</strong> Los datos se an actualizado con exito.
+			</div>
+
+
+
+       <?php }
+    }
 ?>
     <div class="table-responsive " style="width:80%; margin: auto; margin-top:50px;">
         <table class="table">
@@ -45,7 +57,17 @@
                     <td><?php echo $user->lastName; ?></td>
                     <td><?php echo $user->userName;  $num = $num+1;?></td>
                     <th scope="row">
-                        <a class="btn btn-primary js-makeSale btnTbl" id=""  style=" height:35px; width: 120px; ">Editar</a>
+
+                        <button id=""  class="btn btn-primary btnTbl js-btnEditUser" style=" height:35px; width: 120px;"  
+                                js-name = "<?php echo $user->name; ?>"
+                                js-lastName = "<?php echo $user->lastName; ?>"
+                                js-email = "<?php echo $user->email; ?>"
+                                js-phone = "<?php echo $user->phone; ?>"
+                                js-userName = "<?php echo $user->userName; ?>"
+                                js-pass = "<?php echo $user->pass; ?>"
+                                js-typeUser = "<?php echo $user->tipoUser; ?>"
+                                js-idUser = "<?php echo $user->idUser; ?>"   >Editar</button>
+
                         <a href= "#" class="btn btn-warning btnTbl js-deleteProduct" idU="<?php echo $user->idUser; ?>" style=" height:35px; width: 120px; " id="">Eliminar</a>
                     </th>
                     
@@ -70,32 +92,33 @@
         <div class="modal js-ModalAddUser">
         <div class="bodyModal">
             
-            <form action="<?= RUTA_URL;?>/UserController/addUserAd" method="POST" enctype="multipart/form-data" class="formModal">
-                <label>Agregar usuario</label>
+            <form action="<?= RUTA_URL;?>/UserController/addUserAd" method="POST" enctype="multipart/form-data" class="formModal js-formUser">
+                <label class="js-titleModalUser">Agregar usuario</label>
                 
                 <div class="dataP">
                     <label>Nombre:</label>
-                    <input id="js-codBarra" type="text" name="name" required />
+                    <input id="js-name" type="text" name="name" required />
                 </div>
                 <div class="dataP">
                     <label>Last Name:</label>
-                    <input type="text" id="js-namePro" name="lastName" required/>
+                    <input type="text" id="js-lastName" name="lastName" required/>
                 </div>
                 <div class="dataP">
                     <label>Email:</label>
-                    <input type="text" id="js-descPro" name="email" required/>
+                    <input type="text" id="js-email" name="email" required/>
                 </div>
                 <div class="dataP">   
                     <label>Phone:</label>
-                    <input type="text" id="js-precioPro" name="phone" required/>
+                    <input type="text" id="js-phone" name="phone" required/>
                 </div>
                 <div class="dataP">
                     <label>UserName:</label>
-                    <input type="text" id="js-cantPro" name="userName" required />
+                    <input type="text" id="js-userName" name="userName" required />
                 </div>
                 <div class="dataP">
                     <label>Pasword:</label>
-                    <input type="text" id="js-cantPro" name="password" required />
+                    <input type="text" id="js-pass" name="password" required />
+                    <input type="text" id="js-idUser" name="idUser" required />
                 </div>
                 <div class="dataP">
                     <label>Tipo Usuario</label>
@@ -106,8 +129,8 @@
                 </div>
                
                 <div class="dataP contBtnModal">
-                    <input type="submit" value="Send" class="btn btn-success"/>
-                    <i class="btn btn-danger js-btnCancelAddUs">Cancel</i>
+                    <input type="submit" value="Send" class="btn btn-success js-btnModalUser"/>
+                    <a class="btn btn-danger js-btnCancelAddUs" unset()>Cancel</a>
                 </div>
 
                 
@@ -141,5 +164,6 @@
 <?php 
     $_SESSION['delete'] ="fgff";
     $_SESSION['register'] ="falsee";
+    $_SESSION['update'] = "false";
     require RUTA_APP.'/views/inc/footer.php';  
 ?>

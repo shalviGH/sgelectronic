@@ -63,6 +63,54 @@
 		} 
 
 
+
+
+
+		//GET PRODUCTS ALL FOR USER APART>>>>>>>>>>>>>>>>
+		//GET PRODUCTS ALL FOR USER APART>>>>>>>>>>>>>>>>
+
+		public function getAllProductsApart(){
+			if(isset($_SESSION['datos']['tipoUser'])){
+
+				$typeUser = $_SESSION['datos']['tipoUser'];
+			}else{
+				echo "NO exist";
+
+			}
+			
+			if(isset($_SESSION['datos']["idUser"]))
+			{
+				$products = $this->productModel->getproductsAllApart();
+
+				$_SESSION['page'] = 'Product';
+				$_SESSION['page2'] = 'pro';
+
+				$data = [
+					'productAllApart' => $products,
+				];
+				
+				$_SESSION['CRUD'] = "product";
+
+				if($typeUser == 1){
+					//echo "Welcome admin";
+					$this->view('pages/productAllAparts', $data);
+				}
+				elseif ($typeUser == 2) {
+					# code...
+					//echo "Welcome user";
+					$this->view('pages/vUser', $data);
+				}
+
+			}
+			else
+			{
+				redirection('/index');
+			}
+			
+			//echo "Realizando la consula de productos";
+		} 
+
+
 		/*Function for obatain producto  for id inforamtion>>>>>>>>>>>>>>>>>>>>>>>>> */
 		/*Function for obatain producto  for id inforamtion>>>>>>>>>>>>>>>>>>>>>>>>> */
 		/*Function for obatain producto  for id inforamtion>>>>>>>>>>>>>>>>>>>>>>>>> */

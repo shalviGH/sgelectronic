@@ -18,6 +18,22 @@
 			return $result; 
 		}
 
+		/*Funtion for show all product for users */
+		public function getproductsAllApart()
+		{
+			$this->db->query('SELECT * FROM productUserAp');
+			$result = $this->db->getRegisters();
+
+			return $result; 
+		}
+
+
+
+
+
+
+		
+
 		public function getProductImage()
 		{
 			$this->db->query('select * from producto inner join image on 

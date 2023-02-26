@@ -218,6 +218,42 @@
 			}
 		}
 
+
+		public function updateUserAd(){
+			if($_SERVER['REQUEST_METHOD'] == 'POST')
+			{
+				$data = [
+					'idUser'=> trim($_POST['idUser']), 
+					'name'=> trim($_POST['name']),
+					'lastName' => trim($_POST['lastName']),
+					'email' => trim($_POST['email']),
+					'phone' => trim($_POST['phone']),
+					'user' => trim($_POST['userName']),
+					'pass' => trim($_POST['password']),
+					'typoUser' => trim($_POST['typeUser']),
+				];
+
+				if ($this->userModel->updateUser($data)) {
+					//redireccionamos a la lista de usuarios
+					redirection('/UserController/users', $data);
+					$_SESSION['update'] = 'true';
+				}
+				else {
+					die('Ocurred a error');
+				}
+				//print_r($data);
+			}
+			else{
+				echo "No se recivieron datos";
+			}
+		}
+
+
+
+
+
+
+
 		public function deleteUser(){
 
 			/*$user = $this->userModel->getUser($idUser);
