@@ -52,6 +52,8 @@
 		$view =" "; 
 		$view2 =" ";
 
+		//$_SESSION['datos']["tipoUser"];
+
 		if(isset($_SESSION['page']))
 		{
 			$view = $_SESSION['page'];
@@ -68,20 +70,37 @@
 			{
 				$nameUser = $_SESSION['datos']["userName"];
 				$array = ($nameUser);
-
 				$simbol = ucfirst($array[0]);
-				
 				?>
 
 				<header class="newMain">
 					<img src="<?php echo RUTA_IMG?>/imgProfile.png" class="imgUserMain">
 					<label class="lblWelcome"></label>
-
-					<div class="contBtnMainN">
+					<div class="contBtnMainN js-conlistBtnMain contBtnmainSesionU">
 						<a class="optionMenu js-btnHome" href="<?= RUTA_URL;?>/Paginas/index">Home</a>
 						<a class="optionMenu" href="">About</a>
 						<a class="optionMenu js-btnProfile" href="<?= RUTA_URL;?>/UserController/profile/">Profile</a>
-						<a  class="optionMenu js-btnProduct"  href="<?= RUTA_URL;?>/ProductController/getProducts">Products</a>
+
+						<?php if($_SESSION['datos']["tipoUser"] == 1 ){ ?> 
+							<a class="optionMenu js-btnUsers" href="<?= RUTA_URL;?>/UserController/users/">Users</a>
+						<?php } ?>	
+
+
+
+						<div class="btn-group" style=" ">
+							<button type="button" class="optionMenu dropdown-toggle btnProductListMain js-btnProduct"
+									data-toggle="dropdown" >
+								Productos<span class="caret"></span>
+							</button>
+
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="<?= RUTA_URL;?>/ProductController/getProducts" style="font-size:15px;">Todos los productos</a></li>
+								<li><a href="<?= RUTA_URL;?>/ProductController/sistemApart/" style="font-size:15px;">Productos Apartados</a></li>
+							</ul>
+						</div>
+
+						
+						<!--a  class="optionMenu js-btnProduct"  href="<?= RUTA_URL;?>/ProductController/getProducts">Products</a-->
 						<a  class="optionMenu js-btnProductM"  href="<?= RUTA_URL;?>/UserController/closeSession">Logout</a>
 
 						<a class="symbolUser"><?php echo $simbol; ?></a>
@@ -119,6 +138,13 @@
 						<a class="optionMenu js-btnAbout" href="<?= RUTA_URL;?>/Paginas/about">About</a>
 						<a class="optionMenu" href="">Services</a>
 						<a  class="optionMenu js-btnProductM"  href="<?= RUTA_URL;?>/Paginas/products">Products</a>
+
+						
+
+
+
+
+
 						<a  class="optionMenu js-btnProductMw"  href="<?= RUTA_URL;?>/Paginas/login">Login</a>
 
 						<!--img src="<?php echo RUTA_IMG?>/imgProfile.png" class="imgUserMain js-imgLoginForOpenLog"-->
@@ -221,6 +247,8 @@
 			$typeUser = $_SESSION['datos']["tipoUser"];
 			//echo $typeUser;
 		}
+
+
 		
 	?>
 

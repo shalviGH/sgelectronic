@@ -181,7 +181,6 @@ este  ?
 
 	<!--Modal for show login---><!--Modal for show login---><!--Modal for show login--->
     <!--Modal for show login---><!--Modal for show login---><!--Modal for show login--->
-			<div class="iconBack js-back"><img src="<?php echo RUTA_IMG?>/flechaleft.png" height="40px" width="40px" ></div>
 
             <form action="<?= RUTA_URL;?>/UserController/login" method="POST" enctype="multipart/form-data" class="formLogin">
 				<div class="contImgLoginH">
@@ -192,24 +191,28 @@ este  ?
 					</div>
 				</div>
 
-			<div class="contDataForm1">
+				<div class="contDataForm1">
 
 					<div class="contFormL">
+						<div class="contBtnForExitLog"><a class="iconExit" href="<?= RUTA_URL;?>/Paginas/index">X</a></div>
 						<img src="<?php echo RUTA_IMG?>/robotAbout.png" class="imgLoginUs">
 						
 						<label class="lblLoginTitle">Login</label>	
 						
 						<div class="cInpLog">
 							<!--label>Nombre:</label-->
-							<input class="inpLogin" type="text" name="user" required placeholder="username" required/>
+							<input class="inpLogin" type="text" name="user" 
+							oninput = "" maxlength="30"  maxlength="30" required placeholder="username" required id="js-inputLogin"/>
 						</div>
 						
 						<div class="cInpLog">
 							<!--label>Nombre:</label-->
-							<input class="inpLogin" type="password" name="pwd" required placeholder="Password" required/>
+							<input class="inpLogin" type="password" name="pwd" 
+							oninput="" maxlength="30"   required placeholder="Password" required id="js-inputLoginPwd"/>
 						</div>
 
-						<div class="dataP contBtnLogin">
+						<div class="dataPr contBtnLogin">
+							<button class="btnLoginCreate js-register">Crear cuenta</button>
 							<input type="submit" value="Login" class="btnLoginEnter"/>
 							<!--i class="btn btn-danger js-btnCancel">Cancel</i-->
 						</div>

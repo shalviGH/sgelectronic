@@ -27,6 +27,7 @@
 		<script type="text/javascript" src="<?php echo RUTA_URL; ?>/js/main.js"></script>
 		<script type="text/javascript" src="<?php echo RUTA_URL; ?>/js/product.js"></script>
 		<script type="text/javascript" src="<?php echo RUTA_URL; ?>/js/home.js"></script>
+		<script type="text/javascript" src="<?php echo RUTA_URL; ?>/js/user.js"></script>
 
 	</body>
 </html>

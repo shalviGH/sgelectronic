@@ -126,4 +126,25 @@ $(document).ready(function(){
 
    });
 
+
+   function check(e) {
+     var tecla = (document.all) ? e.keyCode : e.which;
+  
+      //Tecla de retroceso para borrar, siempre la permite
+      if (tecla == 8) {
+          return true;
+      }
+  
+      // Patrón de entrada, en este caso solo acepta numeros y letras
+      patron = /[A-Za-z0-9]/;
+      tecla_final = String.fromCharCode(tecla);
+      return patron.test(tecla_final);
+  }
+
+
+  var strValues = "this.value = this.value.replace(/[^a-zA-Z0-9.@_]/,'')";
+
+  $('#js-inputLogin').attr('oninput', strValues);
+  $('#js-inputLoginPwd').attr('oninput', strValues);
+
 });

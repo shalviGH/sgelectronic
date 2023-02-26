@@ -14,23 +14,30 @@
 			$this->userModel = $this->model('UserModel');
 			session_start();
 			ob_start();
+		}
+
+		public function users(){
+
+			if(isset($_SESSION['datos']["idUser"])){
+				$_SESSION['page'] = 'User';
+				//get users
+				$users = $this->userModel->getUsers();
+
+				$data = [ 
+					'title' => 'view users',
+					'users' => $users
+				];
+
+				$this->view('pages/users', $data);
+			}else{
+				redirection('/Paginas/index');
+
+			}
 			
 
 		}
 
-		public function users(){
-			$_SESSION['page'] = 'User';
 
-			//get users
-			$users = $this->userModel->getUsers();
-
-			$data = [ 
-				'title' => 'view users',
-				'users' => $users
-			];
-
-			$this->view('pages/user/moduleUser', $data);
-		}
 
 		public function pageUser($data)
 		{
@@ -73,6 +80,7 @@
 					'phone' => "000000000",
 					'userName' => trim($_POST['userName']),
 					'pass' => trim($_POST['pass']),
+					'typeUser' => 2,
 				];
 
 				
@@ -125,6 +133,56 @@
 			}
 		}
 
+		public function addUserAd(){
+			if($_SERVER['REQUEST_METHOD'] == 'POST')
+			{
+
+				$data = [
+					'name' => trim($_POST['name']),
+					'lastName' => trim($_POST['lastName']),
+					'email' => trim($_POST['email']),
+					'phone' => trim($_POST['phone']),
+					'userName' => trim($_POST['userName']),
+					'pass' => trim($_POST['password']),
+					'typeUser' => trim($_POST['typeUser'])
+				];
+
+				
+				$row = $this->userModel->verifyUser($data);
+
+				if($row == null)
+				{
+					if ($this->userModel->addUser($data)) {
+						//redirection('/Users/users');
+	
+						$_SESSION['register'] = "insert";
+						redirection('/UserController/users');
+						//echo "vfbsglkd";
+	
+						$_SESSION['register'] = "true";
+					}
+					else {
+						die('Ocurred a error');
+					}
+				}
+				else{
+					//echo "El usuario ya existe en la base de datos";
+					$_SESSION['register'] = "false";
+					redirection('/Paginas/login');
+				}
+					
+				
+			}
+			else{
+				$data = [
+					'user' => '',
+					'password' => ''
+				];
+				$this->view('user/users', $data);
+				//echo "vfbsglkd";
+			}
+		}
+
 
 		public function updateUser(){
 			if($_SERVER['REQUEST_METHOD'] == 'POST')
@@ -160,9 +218,9 @@
 			}
 		}
 
-		public function deleteUser($idUser){
+		public function deleteUser(){
 
-			$user = $this->userModel->getUser($idUser);
+			/*$user = $this->userModel->getUser($idUser);
 
 			$data = [
 					'id' => $user->id,
@@ -170,23 +228,26 @@
 					'lastName' => $user->lastName,
 					'user' => $user->user,
 					'password' => $user->password
-				];
+				];*/
 
 			if($_SERVER['REQUEST_METHOD'] == 'POST')
 			{
 				$data = [
-					'id'=> $idUser
+					'idU' => trim($_POST['idUser']),
 				];
 
+
 				if ($this->userModel->deleteUser($data)) {
-					redirection('/Users/users');
+					redirection('/UserController/users');
+
+					$_SESSION['delete'] = 'true';
 				}
 				else 
 				{
 					die('Ocurred a error');
 				}
 			}
-			$this->view('pages/user/moduleDeleteUser', $data);
+			redirection('/UserController/users');
 		}
 
 

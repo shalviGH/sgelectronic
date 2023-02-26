@@ -15,19 +15,28 @@
                     <!--label >Productos mas vendidos</label-->
                     <div class="contiInfoProduct">
                         <label class="titleProduct">Arduino</label>
-                        <img src="<?php echo RUTA_IMG?>/imgProfile.png" width="70px" height="70px" class="imgProductInfw">
-                        <label class="lblDescPro">Arduino marca génerico</label>
+                        <img src="<?php echo RUTA_IMG?>/arduino3.jpg" width="150px" height="150px" class="imgProductInfw">
+                        <label class="lblDescPro">Precio: 250</label>
+                        <label class="lblDatePro">12/02/2023</label>
+                        
+                    </div>
+
+                    <div class="contiInfoProduct">
+                        <label class="titleProduct">Puente h</label>
+                        <img src="<?php echo RUTA_IMG?>/puenteh1.jpg" width="150px" height="150px" class="imgProductInfw">
+                        <label class="lblDescPro">Puente-H  L934</label>
                         <label class="lblDatePro">12/04/2023</label>
                         
                     </div>
 
                     <div class="contiInfoProduct">
-                        <label class="titleProduct">Arduino</label>
-                        <img src="<?php echo RUTA_IMG?>/imgProfile.png" width="70px" height="70px" class="imgProductInfw">
-                        <label class="lblDescPro">Arduino marca génerico</label>
+                        <label class="titleProduct">Puente h</label>
+                        <img src="<?php echo RUTA_IMG?>/cablej1.jpg" width="150px" height="150px" class="imgProductInfw">
+                        <label class="lblDescPro">Puente-H  L934</label>
                         <label class="lblDatePro">12/04/2023</label>
                         
                     </div>
+
 
                 </div>
 
@@ -104,7 +113,11 @@
 
 
 
-<div class ="containerHome containerProductForUser js-contElementsProducto1">
+
+
+
+
+<!--div class ="containerHome containerProductForUser js-contElementsProducto1">
     
             <?php 
                 if(isset($data['product'])){
@@ -137,8 +150,8 @@
                 ?>
                     <div class="contImg js-contProducts" id="dataP">
                         <div class="contImg js-contProduct" id="dataPl">
-                            <!--label><?php echo $product->nameProduct; ?></label-->
-                        <!--img  src="<?php echo RUTA_IMG?>/imgProfile.png" class="imgProduct"-->
+                            <label><?php echo $product->nameProduct; ?></label>
+                        <img  src="<?php echo RUTA_IMG?>/imgProfile.png" class="imgProduct">
                             <img  src="<?php echo RUTA_IMG , ($product->image); ?>" 
                             class="imgProduct" id="urlImg">
                             
@@ -148,10 +161,10 @@
 
 
                             <div class="line"></div>
-                            <!--a class="tooltip" href="http:sgElectroni.com">ndbfndknbknjnjnjj
+                            <a class="tooltip" href="http:sgElectroni.com">ndbfndknbknjnjnjj
                                 <i class="fas fa-info-circle"><i>
                                     <span class="tooltip-box">de clic sobre la imagenpara ver mas infrolmacion</span>
-                            </a--> 
+                            </a> 
                             <div class="contPrecioAvailable"><label><?php echo '$'.$product->price.'.00' ?></label><label><?php echo 'Disponible:  '.$product->amount; ?></label></div>
                             
                             <input type="hidden" id="js-idProduct" value="<?php echo $product->codBarra; ?>" />
@@ -199,8 +212,8 @@
                             ?>
                             
                         </div>
-                        <!--div class="contBtnProduct"><a href="<?php echo RUTA_URL. '/ProductController/sistemApart/'.  $product->codBarra;  ?> " 
-                            class="btn btn-success btnRealizarVenta">Apartar producto</a></div-->
+                        <div class="contBtnProduct"><a href="<?php echo RUTA_URL. '/ProductController/sistemApart/'.  $product->codBarra;  ?> " 
+                            class="btn btn-success btnRealizarVenta">Apartar producto</a></div>
                             
                             <div class="contBtnProducts contBtnApart">
                             <a href="#" id="js-btnApartUst" <?php if($view == 'ProIndex'){?> class="btn btn-success  js-btnApartProIndex" <?php  }else{?> class="btn btn-success  js-contProductA"  <?php } ?> 
@@ -221,7 +234,7 @@
             </div>
         </div>
                 
-</div>
+</div-->
        
       
 

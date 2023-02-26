@@ -6,10 +6,18 @@ $(document).ready(function(){
        // $(location).attr('href',rutaUrl + "/productController/searchProduct/"+$category);
     });
 
-    
+    /*Function for back in view login */
     $('.js-back').on('click', function(){
 
-        location.href = rutaUrl + "/Paginas/index/";
+        location.href = rutaUrl + "/Paginas/login/";
+       //$(location).attr('href',rutaUrl + "/productController/searchProduct/"+$category);
+    });
+
+    /* */
+
+    $('.js-register').on('click', function(){
+
+        location.href = rutaUrl + "/Paginas/register/";
        //$(location).attr('href',rutaUrl + "/productController/searchProduct/"+$category);
     });
 

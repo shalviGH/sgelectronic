@@ -27,16 +27,20 @@
                     
                     <div class="contInpRegister c2btnRegister">
                         <!--label>Nombre:</label-->
-                        <input class="inpRegister" type="text" name="name"required placeholder="Name" required/>
-                        <input class="inpRegister" type="text" name="lastName" required placeholder="Last Name" required/>
+                        <input class="inpRegister" type="text" name="name"required placeholder="Name" required
+                        oninput = "this.value = this.value.replace(/[^a-zA-Z0-9.@_]/,'')" />
+                        <input class="inpRegister" type="text" name="lastName" required placeholder="Last Name" required
+                        oninput = "this.value = this.value.replace(/[^a-zA-Z0-9.@_]/,'')" />
                     </div>
                     
                         <!--label>Nombre:</label-->
                     <div class="contInpRegister">    
-                        <input class="inpRegister" type="text" name="userName" required placeholder="User Name" required/>
+                        <input class="inpRegister" type="text" name="userName" required placeholder="User Name" required 
+                        oninput = "this.value = this.value.replace(/[^a-zA-Z0-9.@_]/,'')" />
                     </div>
                     <div class="contInpRegister"> 
-                        <input class="inpRegister" type="password" name="pass" required placeholder="Password" required/>
+                        <input class="inpRegister" type="password" name="pass" required placeholder="Password" required
+                        oninput = "this.value = this.value.replace(/[^a-zA-Z0-9.@_]/,'')" />
                     </div>    
 
                     <div class="contInpRegister">

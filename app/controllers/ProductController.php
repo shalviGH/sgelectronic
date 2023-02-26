@@ -31,6 +31,7 @@
 				$productImage = $this->productModel->getProductImage();
 
 				$_SESSION['page'] = 'Product';
+				$_SESSION['page2'] = 'pro';
 
 				$data = [
 						
@@ -229,6 +230,7 @@
 					'numProduct'=> trim($_POST['cantProduct']),
 				];
 				//print_r($data);
+				$_SESSION['apart'] = "true";
 				if ($this->productModel->addUserProduct($data)) {
 					redirection('/productController/getProducts');
 				}

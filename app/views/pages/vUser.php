@@ -29,11 +29,18 @@
             </div>
     <?php
         }
-        
-       
-       $_SESSION['Search'] = 6;
-     // echo  $_SESSION['Search'];
-    ?>
+
+        if(isset($_SESSION['apart'])){
+            if($_SESSION['apart']=="true"){ ?>
+                <div class="alert alert-success alert-dismissable msAlert">
+                    <button type="button" class="close" data-dismiss="alert">&times;</button>
+                    <strong>¡Message!</strong> El producto se a apartado con exito espere el ms para seguir con el proceso.
+                </div>
+        <?php }
+        $_SESSION['Search'] = 6;
+        }?>
+
+    
 
     
     <!--div class="alert alert-warning alert-dismissable msAlert">
@@ -105,6 +112,9 @@
 
 
 <?php 
+    if(isset($_SESSION['apart'])){
+        $_SESSION['apart'] = "false";
+    }
 
     //require RUTA_APP.'/views/pages/viewsProduct/crudProduct.php';  //print_r($data); 
 

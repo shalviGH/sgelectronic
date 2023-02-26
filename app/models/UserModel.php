@@ -11,7 +11,7 @@
 
 		public function getUsers()
 		{
-			$this->db->query('SELECT * FROM user');
+			$this->db->query('SELECT * FROM users');
 			$result = $this->db->getRegisters();
 
 			return $result; 
@@ -35,6 +35,8 @@
 			(name, lastName, email, phone, userName, pass, tipoUser) 
 			VALUES( :nameU, :lastName, :email, :phone, :userName, :pass, :idTipoUser)' );
 
+
+
 			//vinculara valores
 			$this->db->bind(':nameU', $data['name']);
 			$this->db->bind(':lastName', $data['lastName']);
@@ -42,7 +44,7 @@
 			$this->db->bind(':phone', $data['phone']);
 			$this->db->bind(':userName', $data['userName']);
 			$this->db->bind(':pass', $data['pass']);
-			$this->db->bind(':idTipoUser', 2 );
+			$this->db->bind(':idTipoUser', $data['typeUser'] );
 
 			if ($this->db->execute()) 
 			{
@@ -96,10 +98,10 @@
 
 		public function deleteUser($data)
 		{
-			$this->db->query('DELETE FROM user WHERE id = :idU');
+			$this->db->query('DELETE FROM users WHERE idUser = :idU');
 
 			//vincular values
-			$this->db->bind(':idU',$data['id']);
+			$this->db->bind(':idU',$data['idU']);
 			
 			//execute
 			if($this->db->execute())

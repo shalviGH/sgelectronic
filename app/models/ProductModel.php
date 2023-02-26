@@ -281,7 +281,7 @@
 
 		public function deleteProUser($data)
 		{
-			$this->db->query('DELETE FROM userproduct WHERE idUserProduct = :idUp');
+			$this->db->query('DELETE FROM systemapart WHERE idApart = :idUp');
 
 			//vincular values
 			$this->db->bind(':idUp',$data['idUserProduct']);

@@ -43,7 +43,7 @@
 			<!--Nodal for delete product --> <!--Nodal for delete product --> <!--Nodal for delete product --> 
 			<div class="modal js-loginMessage2">
 				 <div class="bodyModal">
-					 <form action="<?= RUTA_URL;?>/Paginas/login" method="POST" class="formModal js-formDelete">
+					 <form action="<?= RUTA_URL;?>/Paginas/register" method="POST" class="formModal js-formDelete">
 							 <label id="js-inpNomPro" class="modalTitle">¡ Message !</label>
 							 <input type="hidden" class="js-codBarra" name="codBarra"  >
 							 <label id="js-inpNomPro" class="msModal">Para realizar este proceseo debe crear una cuenta personal o iniciar sesion</label> 

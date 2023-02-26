@@ -476,6 +476,8 @@
 
 
 
+
+
 /* !container imgHome :::::::::::::::::::::::::::::: *//* !container imgHome :::::::::::::::::::::::::::::: */
 .secction{
     background-image: url("../public/images/fondHome.png");
@@ -613,7 +615,7 @@
         justify-content: space-between;
         
     }
-
+    /*class for containe element for main index*/
     .contBtnMainN{
         position: initial;
         margin-top: -10px;
@@ -622,8 +624,15 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-around;
-        width: 90%;
+        width: 40%;
         height: 40px;
+    }
+
+
+
+    /*Class for container butoon main sesion user*//*Class for container butoon main sesion user*/
+    .contBtnmainSesionU{
+        width: 90%;
     }
 
     
@@ -678,6 +687,14 @@
         border-bottom: 2px solid white;
         height: 35px;
     }
+
+        /*! class for the boton for show lis main button */
+        .btnProductListMain{
+            background-color: rgb(0, 0, 0, .1);
+            border: 0px;
+            width: 110px;
+            padding-right: 10px;
+        }
 
     .btnMainSelected{
         height: 30px;
