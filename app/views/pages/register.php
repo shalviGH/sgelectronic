@@ -29,7 +29,7 @@
                         <input class="inpRegister intputRNL" type="text" name="name"required placeholder="Name" required
                         oninput = "this.value = this.value.replace(/[^a-zA-Z0-9.@_]/,'')" />
 
-                        <input class="inpRegister" type="text" name="lastName" required placeholder="Last Name" required
+                        <input class="inpRegister intputRNL" type="text" name="lastName" required placeholder="Last Name" required
                         oninput = "this.value = this.value.replace(/[^a-zA-Z0-9.@_]/,'')" />
                     </div>
                     
