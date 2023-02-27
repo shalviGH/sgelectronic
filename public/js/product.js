@@ -91,6 +91,12 @@ $(document).ready(function(){
         $('.js-ModalInfoProduct').hide();
     });
 
+
+    $('.js-bacloseMoAddp').on('click', function(){
+        $('.js-ModalAddProduct').hide();
+        $(".js-formUser")[0].reset();
+    });
+
     /* function for to make sale */
     /*$('.js-makeSale').on('click', function(){
        
@@ -156,15 +162,18 @@ $(document).ready(function(){
 
     $('.js-btnCanProApart').on('click', function()
     {
+        $('.js-ModalInfoProduct').hide();
         $('.js-ModalUpdateApart').hide();
+
     });
 
 
     //function for editINfromation Product//function for editINfromation Product
     //function for editINfromation Product//function for editINfromation Product
-    $('.js-btnCancelUpdate').on('click', function()
+    $('.js-bacloseMoUpdate').on('click', function()
     {
         $('.js-ModalUpdateProduct').hide();
+        $(".js-formUser")[0].reset();
     });
 
         
@@ -181,6 +190,7 @@ $(document).ready(function(){
         nameImage = $('.js-cImg', this).val();
 
     });
+
 
     $('.js-editProduct').on('click', function()
     {

@@ -35,6 +35,12 @@
        <?php }
     }
 ?>
+
+
+
+    <div class="text-center" style="margin-top:20px;">
+        <a href="" class="btn btn-default btn-rounded mb-4" data-toggle="modal" id="js-btnAddUser" data-target="#modalRegisterForm">Add new user</a>
+    </div>
     <div class="table-responsive " style="width:80%; margin: auto; margin-top:50px;">
         <table class="table">
             <thead>
@@ -83,10 +89,7 @@
 
 
 
-        <div class="text-center">
-        <a href="" class="btn btn-default btn-rounded mb-4" data-toggle="modal" id="js-btnAddUser" data-target="#modalRegisterForm">Launch
-            Modal Register Form</a>
-        </div>
+
 
 
         <div class="modal js-ModalAddUser">
@@ -121,10 +124,12 @@
                         </div>
                         <div class="contInpRegister c2btnRegister contInpRegUs">
                             <!--label>Nombre:</label-->
-                            <input class="inpRegister inputRegUser inputRegUserA" type="text"  id="js-userName" name="userName"required placeholder="Username" required
+                            <input class="inpRegister inputRegUser inputRegUserA" type="text"  id="js-userName" name="userName" required placeholder="Username" required
                             oninput = "this.value = this.value.replace(/[^a-zA-Z0-9.@_]/,'')" />
+                            
+                            <a class="inpRegister inputRegUserA js-editPass" >Clic aqui para Editar Contraseña</a>
 
-                            <input class="inpRegister inputRegUserA" type="text" name="password"   id="js-pass" required placeholder="password" required
+                            <input class="inpRegister inputRegUserA js-inpPass" type="hidden" name="password"   id="jws-pass" required placeholder="Nueva contraseña"
                             oninput = "this.value = this.value.replace(/[^a-zA-Z0-9.@_]/,'')" />
 
                             <input class="" type="hidden" name="idUser"  id="js-idUser"/>
@@ -132,7 +137,7 @@
 
                         <div class="contInpRegister c2btnRegister contInpRegUs">
                             <select name="typeUser" class="inpRegister inputRegUserA" id="js-tipoUser">
-                                <option value="1">Admin</option>
+                                <option value="1" selected>Admin</option>
                                 <option value="2">User</option>
                             </select>
                         </div>

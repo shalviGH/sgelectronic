@@ -107,13 +107,3 @@
     require RUTA_APP.'/views/inc/footer.php';  
 ?>
 
-
-
-
-    CREATE  VIEW productUserAp AS
-	select  producto.codBarra, producto.nameProduct, producto.image,
-	producto.amount, users.name, producto.price, producto.descrip,
-	systemapart.users_idUser, systemapart.amountProduct,
-	users.userName from producto join systemapart 
-	ON producto.codBarra = systemapart.producto_codBarra 
-	join users on users.idUser = systemapart.users_idUser;

@@ -37,6 +37,7 @@
 
 			<?php
 				require RUTA_APP.'/views/pages/viewsProduct/viewProductForUser.php';  //print_r($data); 
+				$_SESSION['Search'] = 3;
 			?>
    
 			<!--Nodal for delete product --> <!--Nodal for delete product --> <!--Nodal for delete product --> 

@@ -186,7 +186,7 @@ este  ?
 				<div class="contImgLoginH">
 					<div class="fontImgLogin">
 						<label class="lblLoginT lblNameCompany">WELCOME sgELECTRONIC</label>
-						<P class="lblLoginT textLog">MBVFH BVHKS FBSEKDF SJFGHFJDS JHJJBKHKJBKFVKJHV JLHVJLS </P>
+						<P class="lblLoginT textLog">Sabes cuál es el problema? Imaginarte el algoritmo y no programarlo</P>
 						<a  href="<?= RUTA_URL;?>/Paginas/register/" class="lblLoginT textLog">Dont have account?  sing up</a>
 					</div>
 				</div>

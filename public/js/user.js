@@ -6,6 +6,9 @@ $(document).ready(function(){
 
     $('#js-btnAddUser').on('click', function(){
         $('.js-ModalAddUser').show();
+        $('.js-editPass').hide();
+        $('.js-inpPass').attr('type', 'password');
+        $('.js-inpPass').attr('placeholder', 'password');
 
          //cambiamos el titulo del modal
          $('.js-titleModalUser').text('Agregar nuevo suario');
@@ -58,12 +61,16 @@ $(document).ready(function(){
     /*Funtion for update user */
     $('.js-btnEditUser').on('click', function(){
         
+        $('.js-editPass').show();
+        $('.js-inpPass').attr('type', 'hidden');
+        $('.js-inpPass').attr('placeholder', 'Nueva contraseña');
+        
         const name = $(this).attr('js-name');
         const lastName = $(this).attr('js-lastName');
         const email = $(this).attr('js-email');
         const phone = $(this).attr('js-phone');
         const userName = $(this).attr('js-userName');
-        const pass = $(this).attr('js-pass');
+       // const pass = $(this).attr('js-pass');
         const tipoUser= $(this).attr('js-tipoUser');
         const idUser = $(this).attr('js-idUser');
 
@@ -81,10 +88,19 @@ $(document).ready(function(){
         $('#js-email').val(email);
         $('#js-phone').val(phone);
         $('#js-userName').val(userName);
-        $('#js-pass').val(pass);
+       // $('#js-pass').val(pass);
         $('#js-tipoUser').val(tipoUser);
         $('#js-idUser').val(idUser);
         
+    });
+
+
+
+    /*Function for edit password */
+    $('.js-editPass').on('click', function(){
+        $('.js-editPass').hide();
+        $('.js-inpPass').attr('type', 'password');
+
     });
 
 

@@ -21,13 +21,16 @@
 </form>
 
     <?php 
-        if($_SESSION['Search'] == 0){?>
 
-            <div class="alert alert-warning alert-dismissable msAlert">
-                <button type="button" class="close" data-dismiss="alert">&times;</button>
-                <strong>¡Message!</strong> No se encontraron resultados de las busqueda.
-            </div>
-    <?php
+        if(isset($_SESSION['Search'])){
+            $values = $_SESSION['Search'];
+			if($values == 0){ ?>
+                <div class="alert alert-info alert-dismissable msAlert">
+                    <button type="button" class="close" data-dismiss="alert">&times;</button>
+                    <strong>¡Message!</strong> No se encontraron resultados de las busqueda.
+                </div>
+
+    <?php    }
         }
 
         if(isset($_SESSION['apart'])){
@@ -37,7 +40,7 @@
                     <strong>¡Message!</strong> El producto se a apartado con exito espere el ms para seguir con el proceso.
                 </div>
         <?php }
-        $_SESSION['Search'] = 6;
+        
         }?>
 
     
@@ -62,8 +65,7 @@
     <!--view form apart product-->   <!--view form apart product-->   <!--view form apart product-->
 
 <div class="modal js-ModalUpdateApart">
-        <div class="bodyModal ">
-            
+        <div class="bodyModal contFormModal">
             <form action="<?= RUTA_URL;?>/ProductController/productUser" method="POST" class="formModal mApartarProducto">
                 <div class="dataP">
                     <label id="js-inpNomPro" class="lblNameProductd"></label>
@@ -111,10 +113,13 @@
 
 
 
+
 <?php 
     if(isset($_SESSION['apart'])){
         $_SESSION['apart'] = "false";
     }
+    
+    $_SESSION['Search'] = 2;
 
     //require RUTA_APP.'/views/pages/viewsProduct/crudProduct.php';  //print_r($data); 
 

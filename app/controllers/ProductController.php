@@ -32,6 +32,7 @@
 
 				$_SESSION['page'] = 'Product';
 				$_SESSION['page2'] = 'pro';
+				$_SESSION['Search'] = 1;
 
 				$data = [
 						
@@ -84,6 +85,7 @@
 
 				$_SESSION['page'] = 'Product';
 				$_SESSION['page2'] = 'pro';
+				$_SESSION['Search'] = 2;
 
 				$data = [
 					'productAllApart' => $products,
@@ -401,7 +403,7 @@
 					'nameProduct'=> $nameProduct,
 					'category' => $category,
 				];
-
+				
 				//echo "El producto a buscar el ".$data['idProduct'];
 				if ($this->productModel->searchProduct($data)) 
 				{
@@ -435,7 +437,7 @@
 				}
 				else 
 				{
-					$_SESSION['Search'] = 0;
+					
 					//echo "no se encontraron resultados";
 					$data = [
 						'nameProduct'=> "empty",
@@ -451,7 +453,7 @@
 						'productImage' => $productImage
 					];
 
-					
+					$_SESSION['Search'] = 0;
 
 					if(isset($_SESSION['datos']["idUser"]))
 					{

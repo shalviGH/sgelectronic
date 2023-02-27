@@ -530,6 +530,16 @@ table {
 }
 
 
+/*class for modal apart product* :::::::::::*/
+
+.contFormModal{
+        margin-top: 170px;
+    }
+
+
+
+
+
 
 
 
@@ -672,6 +682,12 @@ table {
     .contImg{
         width: 250px;
        
+    }
+
+    /*class for conatiner modal for apart product*/
+
+    .contFormModal{
+        margin-top: 0px;
     }
     
 
