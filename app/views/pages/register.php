@@ -34,8 +34,8 @@
                     </div>
                     
                         <!--label>Nombre:</label-->
-                    <div class="contInpRegister">    
-                        <input class="inpRegister" type="text" name="phone" required placeholder="No phone" required 
+                    <div class="contInpRegister ">    
+                        <input class="inpRegister intputRNL" type="text" name="phone" required placeholder="Phone" required 
                         oninput = "this.value = this.value.replace(/[^0-9]/,'')" />
                     </div>
                     <!--div class="contInpRegister"> 
@@ -48,7 +48,7 @@
                         <input class="inpRegister intputRNL" type="text" name="userName"required placeholder="UserName" required
                         oninput = "this.value = this.value.replace(/[^a-zA-Z@_-.]/,'')" />
 
-                        <input class="inpRegister intputRNL" type="text" name="pass" required placeholder="Password" required
+                        <input class="inpRegister intputRNL" type="password" name="pass" required placeholder="Password" required
                         oninput = "this.value = this.value.replace(/[^a-zA-Z@_-.]/,'')" />
                     </div>
 

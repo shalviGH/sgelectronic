@@ -72,7 +72,7 @@
 				email = :email, 
 				phone = :phone, 
 				userName = :user, 
-				pass = SHA1(:pass),
+				/*pass = SHA1(:pass),*/
 				tipoUser = :tipoUs
 				WHERE idUser = :idU ');
 
@@ -83,7 +83,7 @@
 			$this->db->bind(':email',$data['email']);
 			$this->db->bind(':phone',$data['phone']);
 			$this->db->bind(':user',$data['user']);
-			$this->db->bind(':pass',$data['pass']);
+			/*$this->db->bind(':pass',$data['pass']);*/
 			$this->db->bind(':tipoUs',$data['typoUser']);
 
 			//execute

@@ -188,18 +188,13 @@
 			if($_SERVER['REQUEST_METHOD'] == 'POST')
 			{
 				$data = [
-					/*'idUser'=> trim($_POST['idU']), 
+					'idUser'=> trim($_POST['idU']), 
 					'name'=> trim($_POST['nameU']),
 					'lastName' => trim($_POST['lastName']),
 					'email' => trim($_POST['email']),
-					'phone' => trim($_POST['phone']),*/
-					'idUser'=> trim($_POST['idU']), 
-					'name'=> "fff",
-					'lastName' => "ffvvv",
-					'email' => "ffcvc",
-					'phone' => "ffff",
+					'phone' => trim($_POST['phone']),
 					'user' => trim($_POST['userName']),
-					'pass' => trim($_POST['pass']),
+					/*'pass' => trim($_POST['pass'])*/
 				];
 
 				if ($this->userModel->updateUser($data)) {

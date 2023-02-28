@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
 
-	$('.js-btnUpdateInfoU').attr('disabled', true);
+	//$('.js-btnUpdateInfoU').attr('disabled', true);
 	/*$('#js-inpProfile2').attr('disabled', false);
 	$('#js-inpProfile5').attr('disabled', false);*/
 	

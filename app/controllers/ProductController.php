@@ -32,7 +32,7 @@
 
 				$_SESSION['page'] = 'Product';
 				$_SESSION['page2'] = 'pro';
-				$_SESSION['Search'] = 1;
+				$_SESSION['Search'] = 2;
 
 				$data = [
 						

@@ -21,19 +21,19 @@
             <p class="area pUserInfo" >User information</p>
             <div class="contDataUs">            
                 <div class="dataPro">
-                <input type="hidden"  value=" <?php echo $data['idUser']; ?>" placeholher="user" name="idU" required>
+                <input type="hidden"  value=" <?php echo $data['idUser']; ?>"    placeholher="user"  name="idU" required>
                     <div class ="contUserInfo">
                         <label>Nombre</label>
                         
-                        <input type="text"  id="js-inpProfile" value=" <?php echo $data['nameU']; ?>" placeholher="user" name="nameU" required>
+                        <input type="text"  id="js-inpProfile" value=" <?php echo $data['nameU']; ?>" oninput = "this.value = this.value.replace(/[^a-zA-Z ]/,'')" placeholher="user" name="nameU" required>
                     </div>
                     <div class ="contUserInfo">
                         <label>Apellidos</label>
-                        <input type="text"   id="js-inpProfile1" value=" <?php echo $data['lastName']; ?>" placeholher="user" name="lastName" required>
+                        <input type="text"   id="js-inpProfile1" value=" <?php echo $data['lastName'];  ?>" oninput = "this.value = this.value.replace(/[^a-zA-Z ]/,'')" placeholher="user" name="lastName" required>
                     </div>
                     <div class ="contUserInfo">
                         <label>Telefono</label>
-                        <input type="text" id="js-inpProfile2"  value="<?php echo $data['phone']; ?>" placeholher="pass" name="phone" required>
+                        <input type="text" id="js-inpProfile2"  value="<?php echo $data['phone']; ?>" oninput = "this.value = this.value.replace(/[^1-9]/,'')" placeholher="pass" name="phone" required>
                     </div-->
                     <!--div class ="contUserInfo">
                         <label>User</label>
@@ -53,7 +53,7 @@
                     </div-->
                     <div class ="contUserInfo">
                         <label>User</label>
-                        <input type="text" id="js-inpProfile4" value="<?php echo $data['userName']; ?>" placeholher="pass" name="userName" required>
+                        <input type="text" id="js-inpProfile4" value="<?php echo $data['userName']; ?>" oninput = "this.value = this.value.replace(/[^a-zA-Z@-_.]/,'')" placeholher="pass" name="userName" required>
                     </div-->
                     <!--div class ="contUserInfo">
                         <label>Password</label>   

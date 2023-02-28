@@ -7,9 +7,9 @@
     
    //redirection('/Paginas/index')
 
-   if($_SESSION['datos']["tipoUser"] != 1){
+  /* if($_SESSION['datos']["tipoUser"] != 1){
         redirection('/Paginas/logOut');
-    }
+    }*/
 ?>
 
 
