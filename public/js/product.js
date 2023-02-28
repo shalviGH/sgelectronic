@@ -190,6 +190,9 @@ $(document).ready(function(){
 
         nameImage = $('.js-cImg', this).val();
 
+
+        //alert(idProduct);
+
     });
 
 

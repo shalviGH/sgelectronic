@@ -60,7 +60,7 @@
 
                         <div class="contInpRegister c2btnRegister contInpRegUs">
                             <!--label>Nombre:</label-->
-                            <input class="inpRegister inputRegUser inputRegUserA" type="text" id="js-codBarra" name="codBarra" required placeholder="Codigo de baraa" required
+                            <input class="inpRegister inputRegUser inputRegUserA" type="text" id="js-codBarrad" name="codBarra" required placeholder="Codigo de baraa" required
                             oninput = "this.value = this.value.replace(/[^a-zA-Z0-9]/,'')" />
 
                             <input class="inpRegister inputRegUserA" type="text" id="js-lastName" name="namePro" required placeholder="nombre del producto" required
