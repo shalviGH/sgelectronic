@@ -122,7 +122,7 @@ $(document).ready(function() {
 	/*FUnction for update product--->>>>>>>>> *//*FUnction for update product--->>>>>>>>> */
 	/*FUnction for update product--->>>>>>>>> *//*FUnction for update product--->>>>>>>>> */
 	/*FUnction for update product--->>>>>>>>> *//*FUnction for update product--->>>>>>>>> */
-	$('.btnCancel-js').on('click', function(){
+	/*$('.btnCancel-js').on('click', function(){
 		//alert("Prove button");
 		//$(this).removeClass('btn-primary')
 		var textBtn = $(this).text();
@@ -150,7 +150,7 @@ $(document).ready(function() {
 
 		//alert(textBtn);
 
-	});
+	});*/
 
 
 	$('.js-btnShowMain').click(function()

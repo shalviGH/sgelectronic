@@ -49,6 +49,8 @@
 
 					//uset indice
 					unset($url[1]);
+				}else {
+					redirection('/Paginas/error');
 				}
 			}
 			//para probar traer metodo

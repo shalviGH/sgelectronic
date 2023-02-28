@@ -77,7 +77,7 @@
 					'name' => trim($_POST['name']),
 					'lastName' =>  trim($_POST['lastName']),
 					'email' => "fffffffffffff",
-					'phone' => "000000000",
+					'phone' => trim($_POST['phone']),
 					'userName' => trim($_POST['userName']),
 					'pass' => trim($_POST['pass']),
 					'typeUser' => 2,

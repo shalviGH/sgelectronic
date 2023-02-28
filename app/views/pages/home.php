@@ -5,7 +5,7 @@
 <?php
 		if(isset($_SESSION['datos']["idUser"]))
 		{ ?>
-		<!--div class ="containerHome">
+		<div class ="containerHome">
 
 			<div class="contSlider">
 				<div class="slider">
@@ -14,7 +14,7 @@
 							<img src=" <?php echo RUTA_IMG ?>/carRobot.jpg" alt="">
 						</li>
 						<li>
-							<img src=" <?php echo RUTA_IMG ?>/imgProgrammer.jpg"  alt="">
+							<img src=" <?php echo RUTA_IMG ?>/car1.jpg"  alt="">
 						</li>
 						<li>
 							<img src=" <?php echo RUTA_IMG ?>/seguidor.jpg"  alt="">
@@ -22,29 +22,31 @@
 						<li>
 							<img src=" <?php echo RUTA_IMG ?>/robots.jpg"  alt="">
 						</li>
+						
+						
 					</ul>
 				</div>
 				
 			</div>
 
-		</div-->
+		</div>
 	<?php } else{ ?>
+		<div class="secction">
 
+			<!--img src=" <?php echo RUTA_IMG ?>/carRobot.jpg" class="imgHome">
+			<img src=" <?php echo RUTA_IMG ?>/carRobot.jpg" class="imgHome"-->
+
+			<div class="emailHome">
+				<img src="<?php echo RUTA_IMG?>/imgProfile.png" class="imgUserMain">
+				<label class="lblMailHome">starkhouse1923@gmail.com</label>
+			</div>
+
+		</div>
 		
 
 	<?php }?>
 
-	<div class="secction">
 
-		<!--img src=" <?php echo RUTA_IMG ?>/carRobot.jpg" class="imgHome">
-		<img src=" <?php echo RUTA_IMG ?>/carRobot.jpg" class="imgHome"-->
-
-		<div class="emailHome">
-			<img src="<?php echo RUTA_IMG?>/imgProfile.png" class="imgUserMain">
-			<label class="lblMailHome">starkhouse1923@gmail.com</label>
-		</div>
-
-	</div>
    
 
 

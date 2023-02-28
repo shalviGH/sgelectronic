@@ -1,5 +1,15 @@
 <?php 
     require RUTA_APP.'/views/inc/header.php';  //print_r($data);
+
+
+
+
+    
+   //redirection('/Paginas/index')
+
+   if($_SESSION['datos']["tipoUser"] != 1){
+        redirection('/Paginas/logOut');
+    }
 ?>
 
 

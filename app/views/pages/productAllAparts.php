@@ -1,6 +1,13 @@
 <?php 
     require RUTA_APP.'/views/inc/header.php';  //print_r($data);
 
+    if($_SESSION['datos']["tipoUser"] != 1){
+        redirection('/Paginas/logOut');
+
+   }
+
+   echo $_SESSION['datos']["tipoUser"] ;
+
     if(isset($_SESSION['delete'])){
        if($_SESSION['delete'] == 'true'){?>
             <div class="alert alert-warning alert-dismissable msAlert">

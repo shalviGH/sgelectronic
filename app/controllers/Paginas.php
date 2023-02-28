@@ -116,6 +116,20 @@
 		
 		}
 
+		public function error(){
+
+			$_SESSION['page'] = 'ProIndex';
+			$_SESSION['page2'] = 'about';
+			$_SESSION['view'] = 'abo';
+
+			$data = [
+				'titulo' => 'home1',
+			];
+				
+			$this->view('pages/404', $data);
+		
+		}
+
 		
 		/*public function login(){
 			//$this->view('pages/home');

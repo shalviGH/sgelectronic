@@ -42,7 +42,7 @@
 
                 <div class="listProduct2">
 
-                <?php foreach($op as $product) : ?>
+                    <?php foreach($op as $product) : ?>
 
                     <div class="contiInfoProduct contiInfoProductP js-contProduct">
                         

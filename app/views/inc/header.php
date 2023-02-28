@@ -114,10 +114,13 @@
 						<!--img src="<?php echo RUTA_IMG?>/imgProfile.png" class="imgUserMain js-imgLoginForOpenLog"-->
 					</div>
 
-					<button type="button" class="navbar-toggle js-btnShowMain" data-toggle="collapse" data-target="#example-navbar-collapse">
+					<button type="button" class="navbar-toggle js-btnShowMain btnMainHeader" data-toggle="collapse" data-target="#example-navbar-collapse">
+						<label class="lblMainIcon"></label>
+						<label class="lblMainIcon"></label>
+						<label class="lblMainIcon"></label>
+						<!--span class="icon-bar"></span>
 						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
+						<span class="icon-bar"></span-->
 					</button>
 
 				</header>
@@ -144,25 +147,21 @@
 						<!--a class="optionMenu js-btnAbout" href="<?= RUTA_URL;?>/Paginas/about">About</a-->
 						<a class="optionMenu" href="">Services</a>
 						<a  class="optionMenu js-btnProductM"  href="<?= RUTA_URL;?>/Paginas/products">Products</a>
-
-						
-
-
-
-
-
 						<a  class="optionMenu js-btnProductMw"  href="<?= RUTA_URL;?>/Paginas/login">Login</a>
 
 						<!--img src="<?php echo RUTA_IMG?>/imgProfile.png" class="imgUserMain js-imgLoginForOpenLog"-->
 					</div>
 
-					<button type="button" class="navbar-toggle js-btnShowMain" data-toggle="collapse" data-target="#example-navbar-collapse">
+					<button type="button" class="navbar-toggle js-btnShowMain btnMainHeader" data-toggle="collapse" data-target="#example-navbar-collapse">
+						<label class="lblMainIcon"></label>
+						<label class="lblMainIcon"></label>
+						<label class="lblMainIcon"></label>
+						<!--span class="icon-bar"></span>
 						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
+						<span class="icon-bar"></span-->
 					</button>
 
-			</header>
+			</header> 
 			
 	<?php	}
 		}

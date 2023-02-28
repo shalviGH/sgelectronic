@@ -22,19 +22,18 @@
 
 
 
-<div class ="containerHome">
-        <div class="contElement">
+        
            
-            <div class="contListImage" >
+            <div class="contListProApart2" >
                  <?php 
                    
                     
                     foreach($productApart as $productA) : 
 
                 ?>
-                    <div class="contImg js-contProductq" id="">
-                        <div class="contImg js-contProductAs">
-                            <img  src="<?php echo RUTA_IMG , ($productA->image); ?>" class="imgProduct" id="urlImg"  > 
+                    <div class="contImgProAp" id="">
+                        <div class="contImgProApart2">
+                            <img  src="<?php echo RUTA_IMG , ($productA->image); ?>" class="imgProductAp" id="urlImg"  > 
                             <label class ="js-CantProducto">Disponibles: <?php echo $productA->amountProduct; ?></label>
                             <div class="line"></div>
                                                     <?php 
@@ -42,18 +41,21 @@
                                                         $totalProduct = $productA->amountProduct;
                                                         $precioTotal = $precioProduct * $totalProduct;
                                                     ?>
-                            <div class="contPrecioAvailable"><label class="js-lblPrecioTotal" ><?php echo 'Total: '.$precioTotal.'.00' ?></label><label class="js-productA"><?php echo 'Apartado:  '.$productA->amountProduct; ?></label></div>
+                            <div class="contPrecioAvailable contApartProData">
+                                <label class="js-lblPrecioTotal" ><?php echo 'Total a pagar: '.$precioTotal.'.00' ?></label>
+                                <label class="js-productA"><?php echo 'Apartado:  '.$productA->amountProduct; ?></label>
+                            </div>
                             
                             <input type="hidden" id="js-idProUserAp" value="<?php echo $productA->codBarra; ?>" />
                             
                             <label class= "lblInfoProduct" style="display:none">Produc: <label class="lblInfoProduct2 js-nameProduct" id="js-nameProduct"><?php echo $productA->nameProduct; ?> </label></label>
-                            <label class= "lblInfoProduct" >desc: <label class="lblInfoProduct2 js-descPro" ><?php echo $productA->descrip; ?> </label></label>
+                            <!--label class= "lblInfoProduct" >desc: <label class="lblInfoProduct2 js-descPro" ><?php echo $productA->descrip; ?> </label></label-->
                             <label class= "lblInfoProduct" style="display:none">Precio: <label class="lblInfoProduct2 js-prePro" ><?php echo $productA->price; ?> </label></label>
-                            <label class= "lblInfoProduct" style="display:none">disponibles: <label class="lblInfoProduct2 js-cantProduct"><?php echo $productA->amount; ?> </label></label>
+                            <label class= "lblInfoProduct" style="display:none">disponible: <label class="lblInfoProduct2 js-cantProduct"><?php echo $productA->amount; ?> </label></label>
                             <input type="hidden" id="idUserPro" value="<?php echo $productA->idApart; ?>">
                         </div>
                         <div class="contBtnProduct">
-                            <button js-idpro = "<?php echo $productA->idApart; ?>" href="<?php //echo RUTA_URL.'/ProductController/deleteProductApart/'.$productA->idUserProduct;  ?> " class="btn btn-success js-btnCancelApart">Cancelar Apartado</button>
+                            <button js-idpro = "<?php echo $productA->idApart; ?>" href="<?php //echo RUTA_URL.'/ProductController/deleteProductApart/'.$productA->idUserProduct;  ?> " class="btn btn-success btncancelAp js-btnCancelApart">Cancelar Apartado</button>
                         </div>
                     </div>
 
@@ -63,8 +65,6 @@
                 ?>
                 
             </div>
-        </div>
-    </div>
 
     
     <!--view form apart product-->   <!--view form apart product-->   <!--view form apart product-->
@@ -120,7 +120,7 @@
             <div class="bodyModal">
                 <form action="<?= RUTA_URL;?>/ProductController/deleteProductApart" method="POST" class="formModal js-formDelete">
                         <label id="js-inpNomPro" class="modalTitle">¡ alert !</label>
-                        <input type="text" id="js-idProUserAp2" class="js-codBarrai" name="idProUser"  >
+                        <input type="hidden" id="js-idProUserAp2" class="js-codBarrai" name="idProUser"  >
                         <label id="js-inpNomPro" class="msModal">Esta seguro de eliminar el Producto </label> 
                     
                     <div class="contBtnModal">

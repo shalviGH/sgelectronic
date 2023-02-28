@@ -35,13 +35,22 @@
                     
                         <!--label>Nombre:</label-->
                     <div class="contInpRegister">    
-                        <input class="inpRegister" type="text" name="userName" required placeholder="User Name" required 
-                        oninput = "this.value = this.value.replace(/[^a-zA-Z0-9.@_]/,'')" />
+                        <input class="inpRegister" type="text" name="phone" required placeholder="No phone" required 
+                        oninput = "this.value = this.value.replace(/[^0-9]/,'')" />
                     </div>
-                    <div class="contInpRegister"> 
+                    <!--div class="contInpRegister"> 
                         <input class="inpRegister" type="password" name="pass" required placeholder="Password" required
                         oninput = "this.value = this.value.replace(/[^a-zA-Z0-9.@_]/,'')" />
-                    </div>    
+                    </div-->  
+                    
+                    <div class="contInpRegister c2btnRegister">
+                        <!--label>Nombre:</label-->
+                        <input class="inpRegister intputRNL" type="text" name="userName"required placeholder="UserName" required
+                        oninput = "this.value = this.value.replace(/[^a-zA-Z@_-.]/,'')" />
+
+                        <input class="inpRegister intputRNL" type="text" name="pass" required placeholder="Password" required
+                        oninput = "this.value = this.value.replace(/[^a-zA-Z@_-.]/,'')" />
+                    </div>
 
                     <div class="contInpRegister">
                         <input type="submit" value="Sign Up" class="btnRegisterEnter"/>
