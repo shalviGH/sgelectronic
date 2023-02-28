@@ -29,7 +29,7 @@ $(document).ready(function(){
        //var np = $('.js-descPro').text();idProduct
        idProduct = $('#js-idProduct', this).val();
         namePro = $('.js-nameProduct', this).text();
-        descPro = $('.js-descPro', this).text();
+        descPro = $('.js-descPro', this).val();
         cantPro = $('.js-cantProduct', this).text();
         precio = $('.js-prePro', this).text();
        
@@ -43,7 +43,8 @@ $(document).ready(function(){
         $(".js-inpCantPro").val(cantPro);
         $("#imgProduct").attr("src", imgUrl);
         $("#idPro").val(idProduct);
-        $("#js-desc").text(descPro);
+
+        $("#js-descProduct").text(descPro);
         
 
        //var v = 12;

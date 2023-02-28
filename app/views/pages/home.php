@@ -2,73 +2,71 @@
     require RUTA_APP.'/views/inc/header.php';  //print_r($data);?>
 
 
-    <!--div class ="containerHome">
-        <div class="contElemntLeft">
-            <p class="headDoc"> welcom to PrintDocument</p>
-            <form class="formDoc">
-                <div class="contDataUpload">
-                    <label class="element" style="backgroung:red">Select Document</label>
-			        <input type="file" name="userName" class="txtLogin element"> 
-                    <input type="submit" value="Enter"  class="element btbUpFile">
-                </div>
-            </form>
-        </div>
+<?php
+		if(isset($_SESSION['datos']["idUser"]))
+		{ ?>
+		<!--div class ="containerHome">
 
-        <div class="contElemntRight">
+			<div class="contSlider">
+				<div class="slider">
+					<ul>
+						<li>
+							<img src=" <?php echo RUTA_IMG ?>/carRobot.jpg" alt="">
+						</li>
+						<li>
+							<img src=" <?php echo RUTA_IMG ?>/imgProgrammer.jpg"  alt="">
+						</li>
+						<li>
+							<img src=" <?php echo RUTA_IMG ?>/seguidor.jpg"  alt="">
+						</li>
+						<li>
+							<img src=" <?php echo RUTA_IMG ?>/robots.jpg"  alt="">
+						</li>
+					</ul>
+				</div>
+				
+			</div>
 
-        </div-->
-        <!--div class="contElement contSlider">
-            <div class="slider">
-                <ul>
-                    <li>
-                        <img src=" <?php echo RUTA_IMG ?>/carRobot.jpg" alt="">
-                    </li>
-                    <li>
-                        <img src=" <?php echo RUTA_IMG ?>/imgProgrammer.jpg"  alt="">
-                    </li>
-                    <li>
-                        <img src=" <?php echo RUTA_IMG ?>/seguidor.jpg"  alt="">
-                    </li>
-                    <li>
-                        <img src=" <?php echo RUTA_IMG ?>/robots.jpg"  alt="">
-                    </li>
-                </ul>
-            </div>
-            
-        </div>
+		</div-->
+	<?php } else{ ?>
 
-    </div-->
+		
 
+	<?php }?>
 
-    <div class="secction">
+	<div class="secction">
 
-		   <!--img src=" <?php echo RUTA_IMG ?>/carRobot.jpg" class="imgHome">
-		   <img src=" <?php echo RUTA_IMG ?>/carRobot.jpg" class="imgHome"-->
-		   
+		<!--img src=" <?php echo RUTA_IMG ?>/carRobot.jpg" class="imgHome">
+		<img src=" <?php echo RUTA_IMG ?>/carRobot.jpg" class="imgHome"-->
+
 		<div class="emailHome">
-		    <img src="<?php echo RUTA_IMG?>/imgProfile.png" class="imgUserMain">
-			<label class="lblMailHome">Salvadorhacje@gmail.com</label>
+			<img src="<?php echo RUTA_IMG?>/imgProfile.png" class="imgUserMain">
+			<label class="lblMailHome">starkhouse1923@gmail.com</label>
 		</div>
-	
-		</div>
+
+	</div>
+   
+
+
+
 
 		<div class="elementHome">
 			<div class="contDataInfoHome contDataInfoHome11">
 				<h4>Mision</h4>
-				<p>El objetivo principal de la empresa es fomentar, contribuir 
+				<p>Fomentar, contribuir 
 					e innovar en el campo de la electrónica 
-					entregando todos los componentes electrónicos ajustados a 
-					las necesidades del mercado y de última tecnología
+					brindando todos los componentes electrónicos ajustados a 
+					las necesidades del mercado y de última tecnología.
 				</p>
 
 				<div>
 					<h4>Vision</h4>
-					<p>Nuestra visión se basa en ofrecer la confianza 
+					<p>Ofrecer la confianza 
 						y responsabilidad con cada uno de los clientes, brindando 
 						siempre productos de innovación y la más alta calidad para la elaboración 
 						y diseño de proyectos.
-						El compromiso implica la dedicación para reforzar el área de innovación y tecnología en Venezuela 
-						y así fomentar el campo de la electrónica en el territorio nacional.
+						El compromiso implica la dedicación para reforzar el área de innovación y tecnología
+						y así fomentar el campo de la electrónica en el ambito educacional.
 					</p>
 				</div>
 			</div>
@@ -79,7 +77,7 @@
 				<div>
 					<h4>Valores</h4>
 					<p>Compromiso con nuestros clientes que han depositado su confianza en nosotros.</p>
-					<p>Calidad en nuestros productos y servicios, nuestra carta de recomendación.</p>
+					<p>Calidad en nuestros productos y servicios</p>
 					<p>Honestidad en nuestro trabajo y procesos, hacen de nuestros clientes una relación de sincera amistad</p>
 				</div>
 
@@ -137,20 +135,6 @@
 				</div>
 			</div>	
 		</div>
-
-
- 
-
-
-
-
-
-	
-
-   
-
-
-    
 
 
 <?php require RUTA_APP.'/views/inc/footer.php';  ?>

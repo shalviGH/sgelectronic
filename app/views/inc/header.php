@@ -141,7 +141,7 @@
 					<div class="contBtnMainN js-conlistBtnMain">
 
 						<a class="optionMenu js-btnHome" href="<?= RUTA_URL;?>/Paginas/index">Home</a>
-						<a class="optionMenu js-btnAbout" href="<?= RUTA_URL;?>/Paginas/about">About</a>
+						<!--a class="optionMenu js-btnAbout" href="<?= RUTA_URL;?>/Paginas/about">About</a-->
 						<a class="optionMenu" href="">Services</a>
 						<a  class="optionMenu js-btnProductM"  href="<?= RUTA_URL;?>/Paginas/products">Products</a>
 

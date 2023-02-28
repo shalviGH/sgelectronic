@@ -162,6 +162,7 @@
     justify-content: center;
     /*padding: 10px;*/
     padding-top: 0px;
+   
 }
 .headDoc{
     margin-left: 20px;
@@ -244,9 +245,10 @@
     height: 70px;
 }
 
+/*class for container element*/
 .contElement{
     width: 100%;
-    height: 460px;  
+    height: 200px;  
     padding: 10px;
     /*padding: 5px;*/
     display: flex;
@@ -352,20 +354,20 @@
 }
 
 
-/*SLIDE  FOTOS HOME*//*SLIDE  FOTOS HOME*//*SLIDE  FOTOS HOME*/
+/*SLIDE  FOTOS HOME*//*SLIDE  FOTOSHOME*//*SLIDE  FOTOS HOME*/
 /*SLIDE  FOTOS HOME*//*SLIDE  FOTOS HOME*//*SLIDE  FOTOS HOME*/
 /*SLIDE  FOTOS HOME*/
 .contSlider{
-    padding: 10px;
-    height: 500px;
+    height: 300px;
+
+    background-color: blue;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: auto;
+    width: 100%;
 }
 
 .slider {
-    
 	width: 100%;
 	margin: auto;
 	overflow: hidden;
@@ -376,7 +378,6 @@
 	display: flex;
 	padding: 0;
 	width: 400%;
-    padding: 10px;
 	
 	animation: cambio 20s infinite alternate linear;
 }
@@ -387,7 +388,6 @@
     height: 500px;
 	list-style: none;
 }
-
 
 .slider img {
 	width: 100%;
@@ -510,7 +510,7 @@
 .emailHome{
     margin-top: 270px;
     position:absolute;
-    margin-left: -200px;
+    margin-left: -30%;
 }
 
 .lblMailHome{
@@ -725,7 +725,7 @@
 
     .emailHome{
         margin-top: 300px;
-        margin-left: -1100px;
+        margin-left: -80%;
     }
 
     .imgHome{

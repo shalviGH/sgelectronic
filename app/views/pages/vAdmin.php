@@ -1,14 +1,6 @@
 <?php 
     require RUTA_APP.'/views/inc/header.php';  //print_r($data);
-
-
 ?>
-
-<!--div class="box-header with-border"ffffff>
-        <button class="btn btn-primary" data-toggle="modal" data-target="#modalAgregarProducto">
-            Agreagar imagen
-        </button>
-</div  productImage -->
 
 
     <!--Container of elements of the view elements--> 
@@ -30,6 +22,7 @@
         </div>
     </form>
 
+
     <div class="contBtnAddproduct">
         <!--button  class="btn btn-primary js-AddProduct">Agregar Producto</button-->
         <a href="#" class="btnAnimate btnAddProductAamin js-AddProduct">
@@ -47,8 +40,6 @@
         {
             $crud=  $_SESSION['CRUD'] ;
         }
-
-
         //print_r($data['productImage']);
     ?>
 
@@ -69,6 +60,10 @@
                 }
             ?>
 
+
+       <!---Code for view data in the table for admin data products----><!---Code for view data in the table for admin data products---->
+       <!---Code for view data in the table for admin data products----><!---Code for view data in the table for admin data products---->
+       <!---Code for view data in the table for admin data products----><!---Code for view data in the table for admin data products---->
 
         <div class="containerTable"> 
             <table class= "table">
@@ -143,13 +138,13 @@
                 </tbody>    
             </table>
         </div>
-        
 
 
-<!--:::::::::::::Modal for add image products:::::::::::::--> <!--:::::::::::::Modal for add image products:::::::::::::-->
-<!--:::::::::::::Modal for add image products:::::::::::::-->
 
-<div class="modal js-ModalAddImage">
+    <!--:::::::::::::Modal for add image products:::::::::::::--> <!--:::::::::::::Modal for add image products:::::::::::::-->
+    <!--:::::::::::::Modal for add image products:::::::::::::--> <!--:::::::::::::Modal for add image products:::::::::::::-->
+
+    <div class="modal js-ModalAddImage">
         <div class="bodyModal">
             
             <form action="<?= RUTA_URL;?>/ProductController/addImage" method="POST" enctype="multipart/form-data" class="formModal">
@@ -185,10 +180,16 @@
             </form>
         </div>
     </div>
+    
 
+
+    <!--required view document crud.php for to make creud of the product --><!--required view document crud.php for to make creud of the product -->
+    <!--required view document crud.php for to make creud of the product --><!--required view document crud.php for to make creud of the product -->
     <?php
         require RUTA_APP.'/views/pages/viewsProduct/crudProduct.php';  //print_r($data); 
     ?>
+
+
 
 
 

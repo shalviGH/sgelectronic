@@ -27,10 +27,10 @@
                     <div class="contInpRegister c2btnRegister">
                         <!--label>Nombre:</label-->
                         <input class="inpRegister intputRNL" type="text" name="name"required placeholder="Name" required
-                        oninput = "this.value = this.value.replace(/[^a-zA-Z0-9.@_]/,'')" />
+                        oninput = "this.value = this.value.replace(/[^a-zA-Z ]/,'')" />
 
                         <input class="inpRegister intputRNL" type="text" name="lastName" required placeholder="Last Name" required
-                        oninput = "this.value = this.value.replace(/[^a-zA-Z0-9.@_]/,'')" />
+                        oninput = "this.value = this.value.replace(/[^a-zA-Z ]/,'')" />
                     </div>
                     
                         <!--label>Nombre:</label-->

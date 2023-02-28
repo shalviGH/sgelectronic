@@ -36,7 +36,8 @@
     }
 ?>
 
-
+    <!--TABLE FOR SHOW DATA FOR USER IN THE VIEW ADMIN---><!--TABLE FOR SHOW DATA FOR USER IN THE VIEW ADMIN---><!--TABLE FOR SHOW DATA FOR USER IN THE VIEW ADMIN--->
+    <!--TABLE FOR SHOW DATA FOR USER IN THE VIEW ADMIN---><!--TABLE FOR SHOW DATA FOR USER IN THE VIEW ADMIN---><!--TABLE FOR SHOW DATA FOR USER IN THE VIEW ADMIN--->
 
     <div class="text-center" style="margin-top:20px;">
         <a href="" class="btn btn-default btn-rounded mb-4" data-toggle="modal" id="js-btnAddUser" data-target="#modalRegisterForm">Add new user</a>
@@ -86,11 +87,10 @@
 
 
 
-
-
-
-
-
+        <!--::::::::::::::Modal for add new user Modal for add new user Modal for add new user:::::::::::::::::::-->
+        <!--::::::::::::::Modal for add new user Modal for add new user Modal for add new user:::::::::::::::::::-->
+        <!--::::::::::::::Modal for add new user Modal for add new user Modal for add new user:::::::::::::::::::-->
+        <!--::::::::::::::Modal for add new user Modal for add new user Modal for add new user:::::::::::::::::::-->
 
         <div class="modal js-ModalAddUser">
         <div class="bodyModal">
@@ -109,10 +109,10 @@
                         <div class="contInpRegister c2btnRegister contInpRegUs">
                             <!--label>Nombre:</label-->
                             <input class="inpRegister inputRegUser inputRegUserA" type="text" id="js-name" name="name"required placeholder="Name" required
-                            oninput = "this.value = this.value.replace(/[^a-zA-Z0-9.@_]/,'')" />
+                            oninput = "this.value = this.value.replace(/[^a-zA-Z ]/,'')" />
 
                             <input class="inpRegister inputRegUserA" type="text" id="js-lastName" name="lastName" required placeholder="Last Name" required
-                            oninput = "this.value = this.value.replace(/[^a-zA-Z0-9.@_]/,'')" />
+                            oninput = "this.value = this.value.replace(/[^a-zA-Z ]/,'')" />
                         </div>
                         <div class="contInpRegister c2btnRegister contInpRegUs">
                             <!--label>Nombre:</label-->
@@ -120,7 +120,7 @@
                             oninput = "this.value = this.value.replace(/[^a-zA-Z0-9.@_]/,'')" />
 
                             <input class="inpRegister inputRegUserA" type="text" name="phone"  id="js-phone" required placeholder="Phone" required
-                            oninput = "this.value = this.value.replace(/[^a-zA-Z0-9.@_]/,'')" />
+                            oninput = "this.value = this.value.replace(/[^0-9]/,'')" />
                         </div>
                         <div class="contInpRegister c2btnRegister contInpRegUs">
                             <!--label>Nombre:</label-->
@@ -141,41 +141,18 @@
                                 <option value="2">User</option>
                             </select>
                         </div>
-                    
-                        
-                            <!--label>Nombre:</label-->
-                        <!--div class="contInpRegister">    
-                        inputRegisterUser                 <input class="inpRegister" type="text" name="userName" required placeholder="User Name" required 
-                            oninput = "this.value = this.value.replace(/[^a-zA-Z0-9.@_]/,'')" />
-                        </div>
-                        <div class="contInpRegister"> 
-                        inputRegisterUser              <input class="inpRegister" type="password" name="pass" required placeholder="Password" required
-                            oninput = "this.value = this.value.replace(/[^a-zA-Z0-9.@_]/,'')" />
-                        </div-->    
 
                         <div class="contInpRegister contBtnSaveReg">
                             <input type="submit" value="Guardar" class="btnRegisterEnter btnSaveData"/>
                             <!--i class="btn btn-danger js-btnCancel">Cancel</i-->
                         </div>
 
-                        <!--div class="contInpRegister c2btnRegister inputRegisterUser contLineOption">
-                            <div class="lnRegister"></div> 
-                                <label>Or sign in with</label>
-                            <div class="lnRegister"></div> 
-                            
-                        </div-->
                     </div>
                 </form>
             </div>
         </div>
     </div>
                         
-
-
-
-
-
-
 
 
     <!--Nodal for delete user --> <!--Nodal for delete user --> <!--Nodal for delete user --> 

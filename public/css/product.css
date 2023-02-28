@@ -63,14 +63,54 @@
 
 }
 
+
+/*class for image product info *//*class for image product info *//*class for image product info */
+/*class for image product info *//*class for image product info *//*class for image product info *//*class for image product info */
+.imgProductOption{
+    padding: 10px;
+    background-color: rgba(0, 0, 0, .3);
+    width: 180px;
+    height: 180px;
+    border-radius: 10px;
+}
+
+/*Clase del contenedor que contiene la lista de imagenes que contiene la lista de imagenes de lso productos*/
+/*Clase del contenedor que contiene la lista de imagenes que contiene la lista de imagenes de lso productos*/
+/*Clase del contenedor que contiene la lista de imagenes que contiene la lista de imagenes de lso productos*/
+.contListImageInfo{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    height: 50px;
+}
+
+/*Class for image product in product info*/
+.imgL{
+    width: 60px;
+    height: 60px;
+    padding: 4px;
+    background-color: rgba(0, 0, 0, .3);
+    cursor: progress;
+    border-radius: 10px;
+}
+
+.hDescription{
+    margin-top: 15px;
+}
+
+.pDescription{
+    width: 90%;
+    
+}
+
 /*class line of the product option*/
 .line2{
-    margin-top: 25px;
+    margin-top: 10px;
 }
-.imgProductOption{
-    width: 250px;
-    height: 250px;
-}
+
+
 
 
 .contDispPrice{
@@ -143,6 +183,12 @@
 }
 
 
+
+/*class for modal form for view modal product info*/
+
+.modalProductInfo{
+    background-color: none;
+}
 
 
 
@@ -357,26 +403,7 @@ table {
 
 
 
-/*Clase del contenedor que contiene la lista de imagenes que contiene la lista de imagenes de lso productos*/
-/*Clase del contenedor que contiene la lista de imagenes que contiene la lista de imagenes de lso productos*/
-/*Clase del contenedor que contiene la lista de imagenes que contiene la lista de imagenes de lso productos*/
-.contListImageInfo{
-    margin-top: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 70%;
-    height: 50px;
-}
 
-.imgList{
-    width: 40px;
-    height: 40px;
-    
-}
-.imgList :cursor{
-    cursor: progress;
-}
 
 .contBtnApart{
     display: flex;
@@ -526,9 +553,11 @@ table {
 
 /*! class for modal info product _______________*/
 .modalProductInfo2{
-    margin-top: 140px;
+    margin: 0px;
+    display: flex;
+    height: 100%;
+    background-color: red;
 }
-
 
 /*class for modal apart product* :::::::::::*/
 
