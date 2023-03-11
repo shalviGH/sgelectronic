@@ -82,11 +82,11 @@
 
                         <div class="contBtnProducts contBtnApart">
                             <a href="#" id="js-btnApartUst" <?php if($view == 'ProIndex'){?> class="btn btn-success  js-btnApartProIndex" <?php  }else{?> class="btn btn-success  js-contProductA"  <?php } ?> 
-                                js-codB = " <?php echo $product->codBarra;  ?> "
-                                js-imgP = " <?php echo RUTA_IMG.$product->image;  ?> "
-                                js-nomPro = " <?php echo $product->nameProduct;  ?> "
-                                js-pricePro = " <?php echo $product->price;  ?> "
-                                js-cantPro = " <?php echo $product->amount;  ?> "
+                                js-codB = "<?php echo $product->codBarra;  ?>"
+                                js-imgP = "<?php echo RUTA_IMG.$product->image;  ?>"
+                                js-nomPro = "<?php echo $product->nameProduct;  ?>"
+                                js-pricePro = "<?php echo $product->price;  ?>"
+                                js-cantPro = "<?php echo $product->amount;  ?>"
 
                             >Agregar a carrito</a>
                             

@@ -95,11 +95,14 @@ $(document).ready(function(){
     });
 
 
-
+    //ocultamos el contenedor del password
+    $('#js-contPass').hide();
     /*Function for edit password */
-    $('.js-editPass').on('click', function(){
-        $('.js-editPass').hide();
-        $('.js-inpPass').attr('type', 'password');
+    $('#js-opChangePass').on('click', function(){
+       /* $('.js-editPass').hide();
+        $('.js-inpPass').attr('type', 'password');*/
+        $('#js-contPass').show();
+        //alert("khcds");
 
     });
 

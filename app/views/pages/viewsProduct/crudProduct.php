@@ -83,6 +83,9 @@
 
                             <input class="inpRegister inputRegUserA" type="file"  name="photo"  id="js-pass" required placeholder="Photo" required
                             oninput = "this.value = this.value.replace(/[^a-zA-Z0-9.@._]/,'')" />
+
+                           
+
                         </div>
 
                         <div class="contInpRegister c2btnRegister contInpRegUs">
@@ -149,10 +152,19 @@
                             <input class="inpRegister inputRegUser inputRegUserA" type="text"  id="js-cantPro" name="amount"  required placeholder="Cantidad" required
                             oninput = "this.value = this.value.replace(/[^0-9 ]/,'')" />
 
-                            <input class="inpRegister inputRegUserA" type="file"  name="photo"  id="js-imgPro js-imgPro2" required placeholder="Photo" required
+                            <input class="inpRegister inputRegUserA" type="file"  name="photo"  id="js-imgPro js-imgPro2" placeholder="Photo"
                             oninput = "this.value = this.value.replace(/[^a-zA-Z0-9.]/,'')" />
+                           
+                            <input class="inpRegister inputRegUserA" type="hidden"  name="photoAc"  id="js-photoAc" placeholder="PhotoAc"
+                            oninput = "this.value = this.value.replace(/[^a-zA-Z0-9.@._]/,'')" value="" />
+
+                           
 
                         </div>
+                        <!--div class="contInpRegister c2btnRegister contInpRegUs">
+                            <img src="" width="0px" height="0" id="js-imgAct">
+                        </div-->
+                        
 
                         <div class="contInpRegister c2btnRegister contInpRegUs">
                             <select class="inpRegister inputRegUserA" name="category">

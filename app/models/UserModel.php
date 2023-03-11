@@ -66,31 +66,53 @@
 
 		public function updateUser($data)
 		{
-			$this->db->query('UPDATE users SET 
-				name = :name, 
-				lastName = :lastName, 
-				email = :email, 
-				phone = :phone, 
-				userName = :user, 
-				/*pass = SHA1(:pass),*/
-				tipoUser = :tipoUs
-				WHERE idUser = :idU ');
+				$pass = trim($data['pass']);
 
-			//vincular values
-			$this->db->bind(':idU',$data['idUser']);
-			$this->db->bind(':name',$data['name']);
-			$this->db->bind(':lastName',$data['lastName']);
-			$this->db->bind(':email',$data['email']);
-			$this->db->bind(':phone',$data['phone']);
-			$this->db->bind(':user',$data['user']);
-			/*$this->db->bind(':pass',$data['pass']);*/
-			$this->db->bind(':tipoUs',$data['typoUser']);
+				if(empty($pass)){
+					$this->db->query(' UPDATE users SET 
+					name = :name, 
+					lastName = :lastName, 
+					/*email = :email, */
+					phone = :phone,
+					userName = :user 
+					/*pass = SHA1(:pass),*/
+					/*tipoUser = :tipoUs*/
+					WHERE idUser = :idU ');
 
+					$this->db->bind(':idU',$data['idUser']);
+					$this->db->bind(':name',$data['name']);
+					$this->db->bind(':lastName',$data['lastName']);
+					/*$this->db->bind(':email',$data['email']);*/
+					$this->db->bind(':phone',$data['phone']);
+					$this->db->bind(':user',$data['user']);
+				/*$this->db->bind(':tipoUs',$data['typoUser']);*/
+				}else{
+					$this->db->query('UPDATE users SET 
+					name = :name, 
+					lastName = :lastName, 
+					/*email = :email, */
+					phone = :phone,
+					userName = :user, 
+					pass = SHA1(:pass)
+					/*tipoUser = :tipoUs*/
+					WHERE idUser = :idU ');
+
+					//vincular values
+					$this->db->bind(':idU',$data['idUser']);
+					$this->db->bind(':name',$data['name']);
+					$this->db->bind(':lastName',$data['lastName']);
+					/*$this->db->bind(':email',$data['email']);*/
+					$this->db->bind(':phone',$data['phone']);
+					$this->db->bind(':user',$data['user']);
+					$this->db->bind(':pass',$data['pass']);
+					/*$this->db->bind(':tipoUs',$data['typoUser']);*/
+
+					
+				}
 			//execute
 			if($this->db->execute())
 			{
 				return true;
-
 			}
 			else
 			{

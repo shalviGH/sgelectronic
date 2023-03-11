@@ -191,10 +191,10 @@
 					'idUser'=> trim($_POST['idU']), 
 					'name'=> trim($_POST['nameU']),
 					'lastName' => trim($_POST['lastName']),
-					'email' => trim($_POST['email']),
+					/*'email' => trim($_POST['email']),*/
 					'phone' => trim($_POST['phone']),
 					'user' => trim($_POST['userName']),
-					/*'pass' => trim($_POST['pass'])*/
+					'pass' => trim($_POST['pass'])
 				];
 
 				if ($this->userModel->updateUser($data)) {

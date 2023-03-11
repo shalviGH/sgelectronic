@@ -16,6 +16,10 @@ $(document).ready(function(){
     $('.js-ModalAddImage').hide();
     $('.js-ModalAddImage2').hide();
     $('.js-ModalDeleteProductApart').hide();
+    //oucltamos el modalpara realizar venta
+    //$('.js-ModalSaleProductV').hide();
+
+    
 
     //ocultammos la listade imagnes
     $('.js-imgList').hide();
@@ -195,6 +199,13 @@ $(document).ready(function(){
 
     });
 
+    
+    $('.js-AddProduct').on('click', function(){
+        $('.js-ModalAddProduct').show();
+        //alert("fd");imgUrl
+        //$('#js-photoAc').val(imgUrl);
+     });
+
 
     $('.js-editProduct').on('click', function()
     {
@@ -205,10 +216,15 @@ $(document).ready(function(){
         $('#js-descPro').val(descPro);
         $('#js-precioPro').val(precio);
         $('#js-cantPro').val(cantPro);
+
         //$('#js-imgPro').val(imgUrl);
-       $('#imgUpdate').attr('src', imgUrl)
+       //$('#imgUpdate').attr('src', imgUrl);
         //alert(imgUrl+ "===="+ nameImage);
-        $('#js-nameImg').val(nameImage);
+        //$('#js-imgAct').attr('src', imgUrl);
+
+
+        $('#js-photoAc').val(nameImage);
+
         $('.js-ModalUpdateProduct').show(2000);
         //alert("probando boton");
     });
@@ -331,6 +347,64 @@ $(document).ready(function(){
            $category = $(this).val();
            $(location).attr('href',rutaUrl + "/productController/searchProduct/"+$category);
     });
+
+
+
+    //fucntion for sale productss
+    $('.js-saleProduct').on('click', function() {
+        //Mostramos el modalpara realizar venta
+        $('.js-ModalSaleProductV').show();
+    });
+
+    $('.js-btnCloseSalePro').on('click', function() {
+        $('.js-ModalSaleProductV').hide();
+    });
+
+
+
+     
+
+
+        //funtion for add product In list for sale //funtion for add product In list for sale //funtion for add product In list for sale
+        var maxField = 10; //Input fields increment limitation
+        var addButton = $('#js-btnAddListPro'); //Add button selector
+        var wrapper = $('.field_wrapper'); //Input field wrapper
+        var fieldHTML = '<div class="contListProSale">'+
+                            '<input type="text" name="field_name[]"> ' +
+                            '<input type="text" name="field_name[]"> ' +
+                            '<input type="text" name="field_name[]" class="i" id="">'  + '<a class="btn btn-danger"> Cancelar<a>'
+                        '</div>'; //New input field html 
+        var x = 1; //Initial field counter is 1
+
+        //var importe, codBpro, nombreP, cantProd;
+        var n = 1; 
+
+        $(addButton).click(function(){ //Once add button is clicked
+
+            //var cantProd = $('#js-cantPro').val();
+           // $('#import').val(cantProd);
+
+            $('.i').attr('id','import'+n);
+
+           
+
+            if(x < maxField){ //Check maximum number of input fields
+                x++; //Increment field counter
+                $(wrapper).append(fieldHTML); // Add field html
+                $('#import'+n).val(222);
+            }
+
+            n = 1 + 1;
+        });
+        $(wrapper).on('click', '.remove_button', function(e){ //Once remove button is clicked
+            e.preventDefault();
+            $(this).parent('div').remove(); //Remove field html
+            x--; //Decrement field counter
+        });
+
+
+
+    
     
 
 });

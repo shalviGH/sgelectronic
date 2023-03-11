@@ -12,7 +12,7 @@
 
 		public function getProducts()
 		{
-			$this->db->query('SELECT * FROM producto');
+			$this->db->query('SELECT * FROM producto ORDER BY dateRegister DESC');
 			$result = $this->db->getRegisters();
 
 			return $result; 
@@ -21,7 +21,7 @@
 		/*Funtion for show all product for users */
 		public function getproductsAllApart()
 		{
-			$this->db->query('SELECT * FROM productUserAp');
+			$this->db->query('SELECT * FROM productUserAp ORDER BY dateRegister DESC');
 			$result = $this->db->getRegisters();
 
 			return $result; 
@@ -45,8 +45,8 @@
 
 		public function addProduct($data)
 		{
-			$this->db->query('INSERT INTO producto (codBarra, nameProduct, descrip, price, amount, category,image) 
-            VALUES (:codBarra, :namePro, :descPro, :pricePro, :amountPro, :category,  :imageProduct)' );
+			$this->db->query('INSERT INTO producto (codBarra, nameProduct, descrip, price, amount, category,image, dateRegister) 
+            VALUES (:codBarra, :namePro, :descPro, :pricePro, :amountPro, :category,  :imageProduct, NOW() )' );
 
 			//vinculara valores
 			$this->db->bind(':codBarra', $data['codBarra']);

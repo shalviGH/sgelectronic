@@ -60,6 +60,22 @@
                         <input type="password"  disabled = "true" id="js-inpProfileP" value="<?php echo $data['pass']; ?>" placeholher="feha" name = "pass" required>
                     </div-->
                 </div>
+
+                <div class="dataPro"  > 
+                    <!--div class ="contUserInfo">
+                        <label>Email</label>
+                        <input type="email" disabled = "true" id="js-inpProfile3" value="<?php echo $data['email']; ?>" placeholher="pass" name="email" required>
+                    </div-->
+                    <!--div class ="contUserInfo">
+                        <label>User</label>
+                        <input type="text" id="js-inpProfile4" value="<?php echo $data['userName']; ?>" oninput = "this.value = this.value.replace(/[^a-zA-Z@-_.]/,'')" placeholher="pass" name="userName" required>
+                    </div-->
+                    <a id="js-opChangePass">Cambiar contraseña</a>
+                    <div class ="contUserInfo " id="js-contPass">
+                        <label>Password</label>   
+                        <input type="password" id="js-inpProfileP" placeholder="Ingrese una nueva Contraseña" name = "pass" >
+                    </div>
+                </div>
             </div>        
 
                 <div class="contBtnOptioProfile">

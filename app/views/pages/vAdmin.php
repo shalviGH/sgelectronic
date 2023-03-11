@@ -1,13 +1,8 @@
 <?php 
     require RUTA_APP.'/views/inc/header.php';  //print_r($data);
-
-
-
-
-    
    //redirection('/Paginas/index')
 
-   if($_SESSION['datos']["tipoUser"] != 1){
+  if($_SESSION['datos']["tipoUser"] != 1){
         redirection('/Paginas/logOut');
     }
 ?>
@@ -41,6 +36,13 @@
             <span></span>
             <span></span>
             Add product
+        </a>
+        <a href="#" class="btnAnimate btnAddProductAamin js-saleProduct" style="margin-left:20px">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Vender
         </a>
     </div>
 
@@ -98,10 +100,10 @@
                         foreach($op as $product) : 
                         ?>
                         <tr class="colDataT js-ConProduct">
-                            <input type="hidden" value=" <?php echo $product->codBarra; ?>" id="js-idP">
-                            <input type="hidden" value=" <?php echo $product->descrip; ?>" id="js-desc">
-                            <input type="hidden" value=" <?php echo $product->image; ?>" id="js-cImg">
-                            <input type="hidden" value=" <?php echo $product->image; ?>" class="js-cImg">
+                            <input type="hidden" value="<?php echo $product->codBarra; ?>" id="js-idP">
+                            <input type="hidden" value="<?php echo $product->descrip; ?>" id="js-desc">
+                            <input type="hidden" value="<?php echo $product->image; ?>" id="js-cImg">
+                            <input type="hidden" value="<?php echo $product->image; ?>" class="js-cImg">
 
                             <th class="colData tcNum"><div class="divTbl"><?php echo $numL; ?></div></th>
                             <td><div class="divTbl" ><img src="<?php echo RUTA_IMG , ($product->image); ?>"   width="100px" height="100px"  style="padding:10px" id="imgProduct"/></div></td>
@@ -148,6 +150,65 @@
                 </tbody>    
             </table>
         </div>
+
+
+
+
+
+    <!--:::::::::::::Modal for sale products:::::::::::::--> <!--:::::::::::::Modal for sale products:::::::::::::-->
+    <!--:::::::::::::Modal for sale products:::::::::::::-->
+
+    <div class="modal js-ModalSaleProductV">
+        <div class="bodyModal">
+            
+        <div class="contFormRegister">
+
+            <form action="<?= RUTA_URL;?>/ProductController/saleProduct"  method="POST" enctype="multipart/form-data" class="formLogin formRegister js-formUser">
+
+                <div class="iconClose js-btnCloseSalePro"> <p>x</p> </div>	
+                    <div class="contDataForm1 contDataFormRegister">
+                        <div class="contInpRegister c2btnRegister3 titleFormAddUser">
+                            <!--label>Nombre:</label-->
+                            <label class="lblTitleRegister js-titleFormUser">Registrar nuevo producto</label>
+                        </div>
+
+                        <div class="contInpRegister c2btnRegister contInpRegUs">
+                            <!--label>Nombre:</label-->
+                            <select class="inpRegister inputRegUserA" name="category" id="pro" >
+                                <?php   if(isset($data['product'])) {
+                                            $op = $data['product'];
+                                            //echo $op; 
+                                            foreach($op as $product) :  ?>
+                                                <option   id="js-productSale" value="<?php echo  $product->codBarra; ?>" 
+                                                        js-nameProduct = "<?php echo  $product->nameProduct; ?>"
+                                                        js-pricePRO = "<?php echo  $product->price; ?>" >
+                                                
+                                                        <?php echo  $product->nameProduct;  ?>
+                                                    </option>
+                                <?php       endforeach;  }?>
+                            </select>
+
+                            <input class="inpRegister inputRegUserA" type="number" id="js-cantPro" name="namePro" min="1" 
+                                    required placeholder="nombre del producto" required />
+
+                            <input class="btn btn-success" type="button" id="js-btnAddListPro" name="namePro" value="Agregar" />
+                        </div>
+
+                        <div class="contDataProductSale field_wrapper">
+                            <!--input type="text" name="field_name[]" value=""/-->
+
+                            
+                        </div>
+
+                        <div class="contInpRegister contBtnSaveReg">
+                            <input type="submit" value="Guardar" class="btnRegisterEnter btnSaveData"/>
+                            <!--i class="btn btn-danger js-btnCancel">Cancel</i-->
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 
 
 

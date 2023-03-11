@@ -560,8 +560,8 @@
 			if($_SERVER['REQUEST_METHOD'] == 'POST')
 			{
 				$nameImg1 = $_FILES['photo']['name'];
-				$nameImg2 =$_POST['photo2'];
-				$nameImg = " ";
+				$nameImg2 = $_POST['photoAc'];
+				$nameImg = "";
 
 				if(empty($nameImg1)){
 					//echo "no se recibieron daatos de img1";
@@ -577,6 +577,8 @@
 						'amount' => trim($_POST['amount']),
 						'photo' => $nameImg,
 					];
+
+					//print_r($data);
 	
 					if ($this->productModel->updateProductM($data)) {
 						redirection('/ProductController/getProducts');
@@ -585,6 +587,7 @@
 						die('Ocurred a error');
 					}
 				}
+
 				else{
 
 					//recibimo la variable imagen

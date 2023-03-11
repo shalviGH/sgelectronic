@@ -64,10 +64,6 @@ $(document).ready(function(){
        //alert("fd");
     });
 
-    $('.js-AddProduct').on('click', function(){
-        $('.js-ModalAddProduct').show();
-        //alert("fd");
-     });
 
     
      $('.js-btnCreateAcount').on('click', function(){
