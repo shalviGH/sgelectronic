@@ -71,7 +71,7 @@ $(document).ready(function(){
         const phone = $(this).attr('js-phone');
         const userName = $(this).attr('js-userName');
        // const pass = $(this).attr('js-pass');
-        const tipoUser= $(this).attr('js-tipoUser');
+        const tipoUser= $(this).attr('js-typeUser');
         const idUser = $(this).attr('js-idUser');
 
         //abrimos el modal para actualizar el usuario
@@ -89,7 +89,16 @@ $(document).ready(function(){
         $('#js-phone').val(phone);
         $('#js-userName').val(userName);
        // $('#js-pass').val(pass);
-        $('#js-tipoUser').val(tipoUser);
+        //$('#js-tipoUser').val(tipoUser);
+        if(tipoUser == 1){
+            $('#js-admin').attr('selected', true);
+            $('#js-admin').attr('selected', false);
+        }
+        if(tipoUser == 2){
+            $('#js-admin').attr('selected', false);
+            $('#js-user').attr('selected', true);
+        }
+        //$('#js-admin').attr('selected', false);
         $('#js-idUser').val(idUser);
         
     });

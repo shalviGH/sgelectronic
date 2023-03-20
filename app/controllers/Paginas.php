@@ -53,8 +53,11 @@
 			
 			$_SESSION['page2'] = 'pro';
 			$_SESSION['view'] = 'product';
+			
+			$idU = 0;
+			$tipoU = 2;
 
-			$products = $this->productModel->getProducts();
+			$products = $this->productModel->getProducts($idU, $tipoU);
 			
 			$productImage = $this->productModel->getProductImage();
 

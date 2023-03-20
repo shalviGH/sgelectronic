@@ -74,9 +74,9 @@
 					lastName = :lastName, 
 					/*email = :email, */
 					phone = :phone,
-					userName = :user 
+					userName = :user, 
 					/*pass = SHA1(:pass),*/
-					/*tipoUser = :tipoUs*/
+					tipoUser = :tipoUs
 					WHERE idUser = :idU ');
 
 					$this->db->bind(':idU',$data['idUser']);
@@ -85,7 +85,7 @@
 					/*$this->db->bind(':email',$data['email']);*/
 					$this->db->bind(':phone',$data['phone']);
 					$this->db->bind(':user',$data['user']);
-				/*$this->db->bind(':tipoUs',$data['typoUser']);*/
+					$this->db->bind(':tipoUs',$data['typoUser']);
 				}else{
 					$this->db->query('UPDATE users SET 
 					name = :name, 

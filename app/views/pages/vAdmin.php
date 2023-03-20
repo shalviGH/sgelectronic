@@ -37,13 +37,13 @@
             <span></span>
             Add product
         </a>
-        <a href="#" class="btnAnimate btnAddProductAamin js-saleProduct" style="margin-left:20px">
+        <!--a href="#" class="btnAnimate btnAddProductAamin js-saleProduct" style="margin-left:20px">
             <span></span>
             <span></span>
             <span></span>
             <span></span>
             Vender
-        </a>
+        </a-->
     </div>
 
 
@@ -158,57 +158,44 @@
     <!--:::::::::::::Modal for sale products:::::::::::::--> <!--:::::::::::::Modal for sale products:::::::::::::-->
     <!--:::::::::::::Modal for sale products:::::::::::::-->
 
-    <div class="modal js-ModalSaleProductV">
+    <!--div class="modal js-ModalSaleProductV">
         <div class="bodyModal">
-            
-        <div class="contFormRegister">
+            <div class="contFormRegister">
+                <form action="<?= RUTA_URL;?>/ProductController/saleProduct"  method="POST" enctype="multipart/form-data" class="formLogin formRegister js-formUser">
+                    <div class="iconClose js-btnCloseSalePro"> <p>x</p> </div>	
+                        <div class="contDataForm1 contDataFormRegister">
+                            <div class="contInpRegister c2btnRegister3 titleFormAddUser">
+                                <label class="lblTitleRegister js-titleFormUser">Registrar nuevo producto</label>
+                            </div>
+                            <div class="contInpRegister c2btnRegister contInpRegUs">
+                                <select class="inpRegister inputRegUserA" name="category" id="pro" >
+                                    <?php   if(isset($data['product'])) {
+                                                $op = $data['product'];
+                                                foreach($op as $product) :  ?>
+                                                    <option   id="js-productSale" value="<?php echo  $product->codBarra; ?>" 
+                                                            js-nameProduct = "<?php echo  $product->nameProduct; ?>"
+                                                            js-pricePRO = "<?php echo  $product->price; ?>" >
+                                                    
+                                                            <?php echo  $product->nameProduct;  ?>
+                                                        </option>
+                                    <?php       endforeach;  }?>
+                                </select>
+                                <input class="inpRegister inputRegUserA" type="number" id="js-cantPro" name="namePro" min="1" 
+                                        required placeholder="nombre del producto" required />
+                                <input class="btn btn-success" type="button" id="js-btnAddListPro" name="namePro" value="Agregar" />
+                            </div>
 
-            <form action="<?= RUTA_URL;?>/ProductController/saleProduct"  method="POST" enctype="multipart/form-data" class="formLogin formRegister js-formUser">
+                            <div class="contDataProductSale field_wrapper">
+                            </div>
 
-                <div class="iconClose js-btnCloseSalePro"> <p>x</p> </div>	
-                    <div class="contDataForm1 contDataFormRegister">
-                        <div class="contInpRegister c2btnRegister3 titleFormAddUser">
-                            <!--label>Nombre:</label-->
-                            <label class="lblTitleRegister js-titleFormUser">Registrar nuevo producto</label>
+                            <div class="contInpRegister contBtnSaveReg">
+                                <input type="submit" value="Guardar" class="btnRegisterEnter btnSaveData"/>
+                            </div>
                         </div>
-
-                        <div class="contInpRegister c2btnRegister contInpRegUs">
-                            <!--label>Nombre:</label-->
-                            <select class="inpRegister inputRegUserA" name="category" id="pro" >
-                                <?php   if(isset($data['product'])) {
-                                            $op = $data['product'];
-                                            //echo $op; 
-                                            foreach($op as $product) :  ?>
-                                                <option   id="js-productSale" value="<?php echo  $product->codBarra; ?>" 
-                                                        js-nameProduct = "<?php echo  $product->nameProduct; ?>"
-                                                        js-pricePRO = "<?php echo  $product->price; ?>" >
-                                                
-                                                        <?php echo  $product->nameProduct;  ?>
-                                                    </option>
-                                <?php       endforeach;  }?>
-                            </select>
-
-                            <input class="inpRegister inputRegUserA" type="number" id="js-cantPro" name="namePro" min="1" 
-                                    required placeholder="nombre del producto" required />
-
-                            <input class="btn btn-success" type="button" id="js-btnAddListPro" name="namePro" value="Agregar" />
-                        </div>
-
-                        <div class="contDataProductSale field_wrapper">
-                            <!--input type="text" name="field_name[]" value=""/-->
-
-                            
-                        </div>
-
-                        <div class="contInpRegister contBtnSaveReg">
-                            <input type="submit" value="Guardar" class="btnRegisterEnter btnSaveData"/>
-                            <!--i class="btn btn-danger js-btnCancel">Cancel</i-->
-                        </div>
-                    </div>
-                </form>
-            </div>
+                    </form>
+                </div>
         </div>
-    </div>
+    </div-->
 
 
 

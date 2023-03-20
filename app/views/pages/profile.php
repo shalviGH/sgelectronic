@@ -19,70 +19,64 @@
 
         <form action="<?= RUTA_URL;?>/UserController/updateUser/<?php echo $data['idUser']; ?>/" method="POST"  class="formProfile-js1 contDataProfile1">
             <p class="area pUserInfo" >User information</p>
-            <div class="contDataUs">            
-                <div class="dataPro">
-                <input type="hidden"  value=" <?php echo $data['idUser']; ?>"    placeholher="user"  name="idU" required>
-                    <div class ="contUserInfo">
-                        <label>Nombre</label>
-                        
-                        <input type="text"  id="js-inpProfile" value=" <?php echo $data['nameU']; ?>" oninput = "this.value = this.value.replace(/[^a-zA-Z ]/,'')" placeholher="user" name="nameU" required>
-                    </div>
-                    <div class ="contUserInfo">
-                        <label>Apellidos</label>
-                        <input type="text"   id="js-inpProfile1" value=" <?php echo $data['lastName'];  ?>" oninput = "this.value = this.value.replace(/[^a-zA-Z ]/,'')" placeholher="user" name="lastName" required>
-                    </div>
-                    <div class ="contUserInfo">
-                        <label>Telefono</label>
-                        <input type="text" id="js-inpProfile2"  value="<?php echo $data['phone']; ?>" oninput = "this.value = this.value.replace(/[^1-9]/,'')" placeholher="pass" name="phone" required>
-                    </div-->
-                    <!--div class ="contUserInfo">
-                        <label>User</label>
-                        <input type="text" disabled = "true"  id="js-inpProfileU" value="<?php echo $data['userName']; ?>" placeholher="pass" name="userName" required>
-                    </div-->
+           
+            <div class="contDataUs2">
+                <div class="contInptProfile">
+                    <!--label>Nombre:</label-->
+                    <div class="contLblInptProfile">
+                        <label>Name</label>  
+                        <input id="js-inpProfile" value=" <?php echo $data['nameU']; ?>" class="inpRegister inputProfile" 
+                        oninput = "this.value = this.value.replace(/[^a-zA-Z ]/,'')" placeholher="user" name="nameU" required
+                     >
 
-                    <!--div class ="contUserInfo">
-                        <label>Telefono</label>
-                        <input type="text" disabled = "true" id="js-inpProfilePh"  value="<?php echo $data['phone']; ?>" placeholher="pass" name="phone" required>
-                    </div-->
-                </div>    
+                    </div> 
 
-               <div class="dataPro"  > 
-                    <!--div class ="contUserInfo">
-                        <label>Email</label>
-                        <input type="email" disabled = "true" id="js-inpProfile3" value="<?php echo $data['email']; ?>" placeholher="pass" name="email" required>
-                    </div-->
-                    <div class ="contUserInfo">
-                        <label>User</label>
-                        <input type="text" id="js-inpProfile4" value="<?php echo $data['userName']; ?>" oninput = "this.value = this.value.replace(/[^a-zA-Z@-_.]/,'')" placeholher="pass" name="userName" required>
-                    </div-->
-                    <!--div class ="contUserInfo">
-                        <label>Password</label>   
-                        <input type="password"  disabled = "true" id="js-inpProfileP" value="<?php echo $data['pass']; ?>" placeholher="feha" name = "pass" required>
-                    </div-->
+                    <div class="contLblInptProfile">
+                        <label>Last Name</label>  
+                        <input class="inpRegister inputProfile" id="js-inpProfile1" value=" <?php echo $data['lastName'];  ?>" 
+                            oninput = "this.value = this.value.replace(/[^a-zA-Z ]/,'')" name="lastName" required
+                        />
+                    </div> 
                 </div>
 
+                <input type="hidden"  value=" <?php echo $data['idUser']; ?>"    placeholher="user"  name="idU" required>
+
+                <div class="contInptProfile">
+                    <!--label>Nombre:</label-->
+                    <div class="contLblInptProfile">
+                        <label>Phone</label>  
+                        <input id="js-inpProfile" value="<?php echo $data['phone']; ?>" class="inpRegister inputProfile" 
+                        oninput = "this.value = this.value.replace(/[^0-9 ]/,'')" name="phone" minlength="10" maxlength="10" size="10" required />
+                    </div> 
+
+                    <div class="contLblInptProfile">
+                        <label>UserName</label>  
+                        <input class="inpRegister inputProfile" id="js-inpProfile4" max-length="10" value="<?php echo $data['userName']; ?>" 
+                        oninput = "this.value = this.value.replace(/[^a-zA-Z@-_.]/,'')" placeholher="pass" name="userName" required
+                        />
+                    </div> 
+                </div>
+
+
+
+                </div>    
+
+
                 <div class="dataPro"  > 
-                    <!--div class ="contUserInfo">
-                        <label>Email</label>
-                        <input type="email" disabled = "true" id="js-inpProfile3" value="<?php echo $data['email']; ?>" placeholher="pass" name="email" required>
-                    </div-->
-                    <!--div class ="contUserInfo">
-                        <label>User</label>
-                        <input type="text" id="js-inpProfile4" value="<?php echo $data['userName']; ?>" oninput = "this.value = this.value.replace(/[^a-zA-Z@-_.]/,'')" placeholher="pass" name="userName" required>
-                    </div-->
+
                     <a id="js-opChangePass">Cambiar contraseña</a>
                     <div class ="contUserInfo " id="js-contPass">
                         <label>Password</label>   
-                        <input type="password" id="js-inpProfileP" placeholder="Ingrese una nueva Contraseña" name = "pass" >
+                        <input  class="inpRegister inputProfile" type="password" id="js-inpProfileP" placeholder="Ingrese una nueva Contraseña" name = "pass" >
                     </div>
                 </div>
-            </div>        
 
                 <div class="contBtnOptioProfile">
                     <button  type="submit"  class ="btn btn-success js-btnUpdateInfoU">Guardar</button>
-                    <a class ="btn btn-primary btnCancel-js">Editar info</a>
+                    <a href="<?= RUTA_URL;?>/Paginas/index" class ="btn btn-primary btnCancel-js">Cancelar</a>
                 </div>
-            
+
+            </div>        
         </form>
     </div>
     

@@ -1,7 +1,5 @@
 <?php
-	/**
-	 * 
-	 */
+
 	class ProductController extends Controller
 	{
 		//$_SESSION['CRUD'] = "product";
@@ -10,7 +8,6 @@
 			$this->productModel = $this->model('ProductModel');
 			session_start();
 		}
-
 
 		//function for get all products of databases>>>>>>>>>>>>>>>>
 		//function for get all products of databases>>>>>>>>>>>>>>>>
@@ -26,7 +23,10 @@
 			
 			if(isset($_SESSION['datos']["idUser"]))
 			{
-				$products = $this->productModel->getProducts();
+				$idU = $_SESSION['datos']["idUser"];
+				$tipoU = $_SESSION['datos']['tipoUser'];
+
+				$products = $this->productModel->getProducts($idU, $tipoU);
 
 				$productImage = $this->productModel->getProductImage();
 
@@ -52,8 +52,6 @@
 					$this->view('pages/vUser', $data);
 				}
 
-
-
 			}
 			else
 			{
@@ -62,9 +60,6 @@
 			
 			//echo "Realizando la consula de productos";
 		} 
-
-
-
 
 
 		//GET PRODUCTS ALL FOR USER APART>>>>>>>>>>>>>>>>
@@ -108,10 +103,8 @@
 			{
 				redirection('/index');
 			}
-			
 			//echo "Realizando la consula de productos";
 		} 
-
 
 		/*Function for obatain producto  for id inforamtion>>>>>>>>>>>>>>>>>>>>>>>>> */
 		/*Function for obatain producto  for id inforamtion>>>>>>>>>>>>>>>>>>>>>>>>> */
@@ -167,6 +160,7 @@
 				//$imgContent = addslashes(file_get_contents($_FILES['foto']['tmp_name']));
 					
                    $data = [
+						'idU' => $_SESSION['datos']["idUser"],
                         'codBarra' => trim($_POST['codBarra']),
                         'namePro' => trim($_POST['namePro']),
                         'descPro' => trim($_POST['descPro']),
@@ -186,6 +180,8 @@
 					{
                         die('Ocurred a error');
                     }
+					
+
 			}
 			else{
 				$data = [

@@ -33,8 +33,8 @@
 	<?php } else{ ?>
 		<div class="secction">
 
-			<!--img src=" <?php echo RUTA_IMG ?>/carRobot.jpg" class="imgHome">
-			<img src=" <?php echo RUTA_IMG ?>/carRobot.jpg" class="imgHome"-->
+			<img src=" <?php echo RUTA_IMG ?>/fondHome.png" class="imgHome">
+			<!--img src=" <?php echo RUTA_IMG ?>/carRobot.jpg" class="imgHome"-->
 
 			<div class="emailHome">
 				<img src="<?php echo RUTA_IMG?>/imgProfile.png" class="imgUserMain">

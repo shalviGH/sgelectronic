@@ -146,8 +146,8 @@
 
                         <div class="contInpRegister c2btnRegister contInpRegUs">
                             <select name="typeUser" class="inpRegister inputRegUserA" id="js-tipoUser">
-                                <option value="1" selected>Admin</option>
-                                <option value="2">User</option>
+                                <option value="1" selected="" id="js-admin">Admin</option>
+                                <option value="2" selected="" id="js-user">User</option>
                             </select>
                         </div>
 

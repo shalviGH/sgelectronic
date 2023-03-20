@@ -509,20 +509,19 @@
 
 /* !container imgHome :::::::::::::::::::::::::::::: *//* !container imgHome :::::::::::::::::::::::::::::: */
 .secction{
-    background-image: url("../public/images/fondHome.png");
+    /*background-image: url("../public/images/fondHome.png");*/
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    padding: 3px;
-    height: 370px;
+    height: 350px;
     width: 100%;
 
 }
 
 .imgHome{
     height: 100%;
-    width: 50%;
+    width: 100%;
 }
 
 .emailHome{
@@ -915,6 +914,21 @@
     .formModal{
         width: 40%;
         
+    }
+
+    .secction{
+        /*background-image: url("../public/images/fondHome.png");*/
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        height: 370px;
+        width: 100%;
+    }
+    
+    .imgHome{
+        height: 100%;
+        width: 100%;
     }
 
 

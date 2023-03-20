@@ -102,7 +102,6 @@
     width: 90%;
 }
 
-
 .contDataProfile1{
     padding: 10px;
     width: 80%;
@@ -110,15 +109,43 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
-    
 }
 .contDataUs{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.contDataUs2{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
+}
+
+.contInptProfile{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/*class for container label and input for lbl and input for profile*/
+.contLblInptProfile{
+    margin-top: 5px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    
+}
+
+.inputProfile{
+    width: 100%;
+    outline: none;
 }
 
 .dataPro{
@@ -143,9 +170,29 @@
         width: 40%;
     }
 
-    .contDataUs{
+    /*cont element data profile*/
+    .contInptProfile{
+        display: flex;
         flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+    /*class for container label and input for lbl and input for profile*/
+    .contLblInptProfile{
+        margin-top: 5px;
+        display: flex;
+        width: 48%;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        
     }
 
+    .inputProfile{
+        width: 100%;
+        outline: none;
+    }
+
+  
    
 }

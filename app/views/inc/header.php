@@ -43,9 +43,6 @@
 		}*/
 
 
-
-
-
 		//print_r( $_SESSION['datos']);
 		$nameUser = "";
 		

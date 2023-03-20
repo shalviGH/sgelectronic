@@ -10,12 +10,29 @@
 			$this->db = new Base;
 		}
 
-		public function getProducts()
+		public function getProducts($idU, $tipoU )
 		{
-			$this->db->query('SELECT * FROM producto ORDER BY dateRegister DESC');
-			$result = $this->db->getRegisters();
+			$data = [
+				'idU'=> $idU,
+			];
 
-			return $result; 
+			if($tipoU == 2){
+				$this->db->query('SELECT * FROM producto ORDER BY dateRegister DESC');
+				$result = $this->db->getRegisters();
+				
+				return $result; 
+			}else{
+				$this->db->query('SELECT * FROM producto WHERE idUser = :idU  ORDER BY dateRegister DESC');
+				
+				$this->db->bind(':idU', $data['idU']);
+				
+				$result = $this->db->getRegisters();
+				
+				return $result; 
+			}
+			
+
+			
 		}
 
 		/*Funtion for show all product for users */
@@ -45,10 +62,11 @@
 
 		public function addProduct($data)
 		{
-			$this->db->query('INSERT INTO producto (codBarra, nameProduct, descrip, price, amount, category,image, dateRegister) 
-            VALUES (:codBarra, :namePro, :descPro, :pricePro, :amountPro, :category,  :imageProduct, NOW() )' );
+			$this->db->query('INSERT INTO producto (codBarra, nameProduct, descrip, price, amount, category, image, dateRegister, idUser ) 
+            VALUES (:codBarra, :namePro, :descPro, :pricePro, :amountPro, :category,  :imageProduct, NOW(), :idU )' );
 
 			//vinculara valores
+			$this->db->bind(':idU', $data['idU']);
 			$this->db->bind(':codBarra', $data['codBarra']);
 			$this->db->bind(':namePro', $data['namePro']);
             $this->db->bind(':descPro', $data['descPro']);
@@ -65,9 +83,6 @@
 			else{
 				return false;
 			}
-
-			//echo $data['imageProduct'];
-
 		}
 
 		

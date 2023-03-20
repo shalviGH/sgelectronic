@@ -236,7 +236,7 @@
 				else {
 					die('Ocurred a error');
 				}
-				//print_r($data);
+				print_r($data);
 			}
 			else{
 				echo "No se recivieron datos";
